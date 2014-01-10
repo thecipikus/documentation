@@ -12,7 +12,7 @@ TubePress improves the embedding process by
  3. Bringing in all of the video's meta information (length, description, author, keywords, etc). You can even have
     fine-grained control over how the meta information is presented; it's just simple HTML.
 
-.. image:: ../../_static/images/intro/feature/single-video-embed.png
+.. image:: ../_images/feature/single-video-embed.png
 
 To embed a single video with TubePress, you simply need to give TubePress the ID of the video you'd like to embed. For
 instance, if you want to embed the YouTube video with ID J51kfduN5aA, you would use use the following shortcode:

@@ -5,9 +5,6 @@ import os
 
 # -- General configuration ------------------------------------------------
 
-# Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
-
 # The suffix of source filenames.
 source_suffix = '.rst'
 
@@ -29,7 +26,7 @@ copyright = u'2014, TubePress LLC'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build', '_static', '_themes', 'manual/_shared']
+exclude_patterns = ['_build', '_static', '_themes', 'manual/_shared/**']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.

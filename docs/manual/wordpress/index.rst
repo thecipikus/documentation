@@ -4,7 +4,7 @@ TubePress for WordPress
 TubePress is available to use as a WordPress plugin, which makes it a breeze to use on
 any WordPress site.
 
-While the WordPress plugin is available 100% for free, we recommend the premium version of the plugin: TubePress Pro.
+While the WordPress plugin is available 100% for free, we recommend the premium version of the plugin: **TubePress Pro**.
 TubePress Pro includes all the features of the free TubePress plugin, plus the following additional capabilities:
 
  * Priority technical support (i.e. you jump to the front of the line)

@@ -92,7 +92,7 @@ Notes on the two highlighted lines above:
 Changing the Default Language
 -----------------------------
 
-.. include:: ../_shared/snippets/i18n_intro.rst
+.. include:: ../_shared/usage/i18n_intro.rst
 
 TubePress will determine which language to use based on the ``WP_LANG`` setting that you can define in ``wp-config.php``.
 Details for how to switch the language of your WordPress blog can

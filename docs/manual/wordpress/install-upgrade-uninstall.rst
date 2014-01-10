@@ -11,12 +11,13 @@ This page details how to install, upgrade, and uninstall TubePress when used as 
 Requirements
 ------------
 
-.. include:: ../_shared/snippets/common_requirements.rst
+.. include:: ../_shared/installation/common_requirements.rst
 
 Not sure if your server meets these requirements? You should either
 
  1. Ask your hosting provider (good idea to include a link to this page!)
  2. Install a WordPress plugin that prints out system information. Here are some examples:
+
    * `WordPress phpinfo()`_
    * `WP-ServerInfo`_
 
@@ -28,7 +29,7 @@ Not sure if your server meets these requirements? You should either
 Install
 -------
 
-.. _free-wordpress-plugin-installation:
+.. _wordpress-install-free:
 
 Free Version
 ^^^^^^^^^^^^
@@ -39,10 +40,10 @@ Installing the free WordPress plugin is simple. The easiest method is from your 
     to perform the plugin installation and activation. You can search for ``tubepress``
     and it should come up as the first result.
 
-    .. image:: images/wordpress_easy_install.png
+    .. image:: images/installation/wordpress_easy_install.png
        :alt: TubePress installation via the WordPress dashboard
 
- 2. *Vimeo users only*. Perform the :ref:`one-time Vimeo API setup <vimeo-api-setup-wordpress>`.
+ 2. *Vimeo users only*. Perform the :ref:`one-time Vimeo API setup <wordpress-install-vimeo-api-setup>`.
 
 If the dashboard installation method is not available, or if you'd prefer to install the plugin manually,
 here's how to do it.
@@ -50,9 +51,9 @@ here's how to do it.
  1. Download the plugin from `its page on wordpress.org <http://wordpress.org/plugins/tubepress/>`_.
  2. Follow `these instructions <http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation>`_ to
     finish the manual installation and activation.
- 3. *Vimeo users only*. Perform the :ref:`one-time Vimeo API setup <vimeo-api-setup-wordpress>`.
+ 3. *Vimeo users only*. Perform the :ref:`one-time Vimeo API setup <wordpress-install-vimeo-api-setup>`.
 
-.. _tubepress-pro-installation-wordpress:
+.. _wordpress-install-pro:
 
 TubePress Pro
 ^^^^^^^^^^^^^
@@ -64,26 +65,44 @@ Installation of TubePress Pro into a WordPress environment must be performed man
  2. Download TubePress Pro from `here <http://community.tubepress.com/files/file/11-tubepress-pro/>`_.
  3. Follow `these instructions <http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation>`_ to
     finish the manual installation and activation of the plugin.
- 4. *Vimeo users only*. Perform the :ref:`one-time Vimeo API setup <vimeo-api-setup-wordpress>`.
- 5. *Optional*. :ref:`Install support for Shadowbox.js and/or JW Player 4 <optional-pro-installations-wordpress>`.
+ 4. *Vimeo users only*. Perform the :ref:`one-time Vimeo API setup <wordpress-install-vimeo-api-setup>`.
+ 5. *Optional*. :ref:`Install support for Shadowbox.js and/or JW Player 4 <wordpress-install-optional-pro-installs>`.
 
-.. _vimeo-api-setup-wordpress:
+.. _wordpress-install-vimeo-api-setup:
 
 Vimeo API Setup
 ^^^^^^^^^^^^^^^
 
-.. include:: ../_shared/snippets/vimeo_api_setup.rst
+.. include:: ../_shared/installation/vimeo_api_setup.rst
 
 That's it! You now simply need to provide these credentials to TubePress. You can do this from
 ``WP Admin > Settings > TubePress > Feed``.
 
-.. image:: ../_shared/images/vimeo_api_wp_entry.png
+.. image:: images/installation/vimeo_api_wp_entry.png
 
 Make sure not to mix up the "key" and the "secret"!
 
-.. _optional-pro-installations-wordpress:
+.. _wordpress-install-optional-pro-installs:
 
-.. include:: ../_shared/snippets/optional_pro_installs.rst
+Optional TubePress Pro Installations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Due to licensing restrictions, TubePress Pro does not ship with every library that the free WordPress plugin includes.
+However it's very easy to install these optional libraries manually. This section provides installation instructions.
+
+.. _wordpress-install-jw-player-5x:
+
+JW Player (version 5.x)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: ../_shared/installation/jw-player-5x-installation.rst
+
+.. _wordpress-install-shadowboxjs:
+
+Shadowbox.js
+~~~~~~~~~~~~
+
+.. include:: ../_shared/installation/shadowbox-js-installation.rst
 
 .. _wordpress-upgrade:
 
@@ -93,7 +112,7 @@ Upgrade
 This page details the official upgrade procedures for TubePress. The installation steps are different depending on if
 you are using TubePress Pro or the free version of TubePress.
 
-.. _upgrading-free-wordpress-plugin:
+.. _wordpress-upgrade-free-plugin:
 
 Free Version
 ^^^^^^^^^^^^
@@ -106,9 +125,9 @@ If you would rather upgrade manually, here is the procedure:
 
  1. Deactivate TubePress from ``WP Admin > Plugins``.
  2. Remove the existing TubePress installation directory from ``wp-content/plugins/tubepress``.
- 3. Repeat the :ref:`free WordPress plugin installation procedure <free-wordpress-plugin-installation>`.
+ 3. Repeat the :ref:`free WordPress plugin installation procedure <wordpress-install-free>`.
 
-.. _upgrading-tubepress-pro-in-wordpress:
+.. _wordpress-upgrade-pro:
 
 TubePress Pro
 ^^^^^^^^^^^^^
@@ -120,10 +139,10 @@ Here is the safe upgrade procedure for TubePress Pro when used in WordPress:
 
  1. Deactivate TubePress Pro from ``WP Admin > Plugins``.
  2. Remove the existing TubePress Pro installation directory from ``wp-content/plugins/tubepress_pro_x_y_z``.
- 3. Repeat the :ref:`TubePress Pro installation procedure <free-wordpress-plugin-installation>` with the latest
+ 3. Repeat the :ref:`TubePress Pro installation procedure <wordpress-install-pro>` with the latest
     copy of TubePress Pro.
 
-.. _uninstall-wordpress:
+.. _wordpress-uninstall:
 
 Uninstall
 ---------

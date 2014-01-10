@@ -5,7 +5,7 @@ Creating video galleries is how TubePress made a name for itself. The software l
 highly-functional thumbnail galleries throughout you site, and you complete control over the entire process.
 A live demo of a TubePress gallery can be seen `here <http://tubepress.com/demo/>`_.
 
-.. image:: ../../_static/images/intro/feature/video-gallery.png
+.. image:: ../_images/feature/video-gallery.png
 
 The process to create a video gallery is always the same ...
 

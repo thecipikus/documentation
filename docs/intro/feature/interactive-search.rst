@@ -14,7 +14,7 @@ TubePress provides an end-to-end solution for allowing your users to interactive
 all without leaving your site. The image below is a simple example showing an interactive search input along with a
 few results.
 
-.. image:: ../../_static/images/intro/feature/interactive-search-demo.png
+.. image:: ../_images/feature/interactive-search-demo.png
 
 Like everything else with TubePress, interactive searching has loads of options and is fully customizable to suit
 your needs. To use the feature, you'll need to invoke TubePress twice:

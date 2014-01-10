@@ -9,9 +9,9 @@ TubePress.
  2. `Click here <https://developer.vimeo.com/apps/new>`_ to create a new Vimeo app. You can fill in anything
     for the fields. Below is a sample form that's filled out. Then click the `Create App` button.
 
-    .. image:: ../_shared/images/vimeo_new_app.png
+    .. image:: ../_shared/installation/images/vimeo_new_app.png
 
  3. Make a note of the "Client ID" and "Client secret" of your new app. See the red box below for an idea
     of what it should look like.
 
-    .. image:: ../_shared/images/vimeo_new_keys.png
+    .. image:: ../_shared/installation/images/vimeo_new_keys.png
