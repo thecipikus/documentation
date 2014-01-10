@@ -13,10 +13,10 @@ The process to create a video gallery is always the same ...
     video sources. More video providers are on the way!
 
  2. **Configure TubePress to display those videos**. Check the
-    :doc:`user manual for your environment <../manual/index>` for details on how to do this.
+    :doc:`user manual for your environment <../../manual/index>` for details on how to do this.
 
  3. **Add the gallery to a website**. Again this process is different depending on your environment, so please
-    refer to your specific :doc:`user manual <../manual/index>`.
+    refer to your specific :doc:`user manual <../../manual/index>`.
 
 .. _video-galleries-multiple-sources-feature:
 
@@ -24,7 +24,7 @@ Video Galleries from Multiple Sources
 -------------------------------------
 
 .. note:: This feature is currently only available with the downloadable TubePress Pro. It is not yet available
-on the cloud-hosted TubePress services, but that functionality is coming soon.
+          on the cloud-hosted TubePress services, but that functionality is coming soon.
 
 With TubePress Pro, you can create galleries that are composed of video from multiple video sources. TubePress can even
 combine videos from multiple video providers - for instance, you can easily have YouTube and Vimeo videos

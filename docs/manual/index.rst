@@ -1,11 +1,11 @@
 User Manuals
 ============
 
-The instructions for using TubePress differ depending on how you're running TubePress.
+Below you can find tailored user manuals for using TubePress, and its related software, in various environments.
 
 .. toctree::
    :maxdepth: 1
 
-   TubePress for WordPress <manual/wordpress/index>
-   TubePress for PHP <manual/standalone-php/index>
-   Add-Ons <manual/add-ons/index>
+   TubePress for WordPress <wordpress/index>
+   TubePress for PHP <standalone-php/index>
+   Official TubePress Add-Ons <add-ons/index>

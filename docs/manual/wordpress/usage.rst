@@ -1,12 +1,25 @@
 .. _wordpress-basic-usage:
 
 Using TubePress in WordPress
-----------------------------
+============================
 
-.. contents::
+.. contents:: On This Page
+   :local:
 
-Posts and Pages
-^^^^^^^^^^^^^^^
+.. _basic-wordpress-configuration:
+
+Configuration
+-------------
+
+TubePress comes with a user-friendly options page that can be found from your WordPress admin dashboard. Simply
+visit ``Settings > TubePress`` to access the screen.
+
+.. image:: images/wp-admin.png
+
+.. _wordpress-posts-pages-usage:
+
+Add TubePress to Posts and Pages
+--------------------------------
 
 Follow these instructions to use TubePress (free or Pro) in WordPress posts and/or pages. It's dead simple. Simply type
 
@@ -38,8 +51,8 @@ with the options that you set in ``Settings > TubePress``. On this page you woul
 where you want TubePress to inject its content. Follow this procedure for unlimited galleries on
 unlimited posts/pages. Just use any TubePress shortcode to control the gallery content.
 
-WordPress Templates
-^^^^^^^^^^^^^^^^^^^
+Add TubePress to WordPress Templates
+------------------------------------
 
 TubePress Pro only. Follow these instructions to use TubePress Pro inside WordPress templates. The code snippet
 below shows the `world's simplest WordPress template`_ with TubePress Pro added. As you can see by the highlighted lines
@@ -53,7 +66,7 @@ below, there are only 2 steps:
 
    <?php
 
-     include WP_PLUGIN_DIR . '/tubepress_pro_x_y_z/sys/classes/TubePressPro.php';
+     include WP_PLUGIN_DIR . '/tubepress_pro_x_y_z/src/main/php/classes/TubePressPro.php';
 
      get_header();
 
@@ -76,8 +89,10 @@ Notes on the two highlighted lines above:
     TubePress shortcode. It returns the HTML output of TubePress. You may repeat this function call as many
     times as you like.
 
-Changing Language
------------------
+Changing the Default Language
+-----------------------------
+
+.. include:: ../_shared/snippets/i18n_intro.rst
 
 TubePress will determine which language to use based on the ``WP_LANG`` setting that you can define in ``wp-config.php``.
 Details for how to switch the language of your WordPress blog can

@@ -1,5 +1,5 @@
-TubePress Manual for WordPress Users
-====================================
+TubePress for WordPress
+=======================
 
 TubePress is available to use as a WordPress plugin, which makes it a breeze to use on
 any WordPress site.
@@ -18,11 +18,13 @@ TubePress Pro includes all the features of the free TubePress plugin, plus the f
  * Asynchronous interactive video search
  * Play videos with Fancybox or Tinybox
 
-Table of Contents
-%%%%%%%%%%%%%%%%%
+Manual Contents
+---------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   Installation <install-upgrade-uninstall>
-   usage
+   install-upgrade-uninstall
+   Basic Usage <usage>
+   Using Add-Ons & Themes <addons-and-themes>
+   FAQ & Troubleshooting <faq-and-troubleshooting>

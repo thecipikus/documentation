@@ -1,10 +1,15 @@
-.. _wordpress-installation:
+Install / Upgrade
+=================
 
-Installation for WordPress
---------------------------
+This page details how to install, upgrade, and uninstall TubePress when used as a WordPress plugin.
+
+.. contents:: On this page
+   :local:
+
+.. _wordpress-requirements:
 
 Requirements
-^^^^^^^^^^^^
+------------
 
 .. include:: ../_shared/snippets/common_requirements.rst
 
@@ -17,6 +22,11 @@ Not sure if your server meets these requirements? You should either
 
 .. _WordPress phpinfo(): http://wordpress.org/plugins/wordpress-php-info/
 .. _WP-ServerInfo:       http://wordpress.org/plugins/wp-serverinfo/
+
+.. _wordpress-installation:
+
+Install
+-------
 
 .. _free-wordpress-plugin-installation:
 
@@ -75,10 +85,10 @@ Make sure not to mix up the "key" and the "secret"!
 
 .. include:: ../_shared/snippets/optional_pro_installs.rst
 
-.. _upgrading-in-wordpress:
+.. _wordpress-upgrade:
 
-Upgrading the WordPress Plugin
-------------------------------
+Upgrade
+-------
 
 This page details the official upgrade procedures for TubePress. The installation steps are different depending on if
 you are using TubePress Pro or the free version of TubePress.
@@ -115,10 +125,10 @@ Here is the safe upgrade procedure for TubePress Pro when used in WordPress:
 
 .. _uninstall-wordpress:
 
-Uninstall the WordPress Plugin
-------------------------------
+Uninstall
+---------
 
-If you'd like to completely uninstall TubePress from your WordPress installation, here are the steps:
+If you'd like to completely uninstall TubePress from your WordPress installation for any reason, here are the steps:
 
  1. Deactivate TubePress from ``WP Admin > Plugins``.
  2. Remove the TubePress installation directory from ``wp-content/plugins/``.

@@ -10,10 +10,11 @@ TubePress allows website builders of any skill level to add dynamic video featur
 brief overview of these features.
 
 .. toctree::
-   :titlesonly:
+   :maxdepth: 1
 
    Video Galleries <feature/galleries>
-   feature/single-video-embeds
+   Single Video Embeds <feature/single-video-embeds>
+   Interactive Searching <feature/interactive-search>
 
 .. _getting-tubepress:
 
