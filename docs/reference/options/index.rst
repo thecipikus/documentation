@@ -1,7 +1,8 @@
-Reference
+Options
 =========
 
 .. toctree::
    :maxdepth: 1
 
-   options/index
+   core
+   youtube
