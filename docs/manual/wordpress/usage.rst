@@ -54,7 +54,9 @@ unlimited posts/pages. Just use any TubePress shortcode to control the gallery c
 Add TubePress to WordPress Templates
 ------------------------------------
 
-TubePress Pro only. Follow these instructions to use TubePress Pro inside WordPress templates. The code snippet
+.. note:: TubePress Pro is required to use this feature
+
+Follow these instructions to use TubePress Pro inside WordPress templates. The code snippet
 below shows the `world's simplest WordPress template`_ with TubePress Pro added. As you can see by the highlighted lines
 below, there are only 2 steps:
 

@@ -15,5 +15,4 @@ based in Pittsburgh, Pennsylvania.
 
    intro/index
    User Manuals <manual/index>
-   developer/index
    reference/index

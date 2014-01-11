@@ -4,6 +4,8 @@ YouTube Options
 .. contents:: On This Page
    :local:
 
+.. _youtube-gallery-sources:
+
 Gallery Sources
 ---------------
 
@@ -149,53 +151,55 @@ Gallery Sources
 | YouTube documentation  | `Click here <https://developers.google.com/youtube/2.0/reference#Related_videos_feed>`_           |
 +------------------------+---------------------------------------------------------------------------------------------------+
 
-Thumbnails
-----------
+Embedded Video Player
+-----------------------
 
-.. contents:: Thumbnail Options
+.. contents:: Embedded Video Player
    :local:
 
-.. _option-ajaxPagination:
+.. _option-autoHide:
 
 .. index::
-   single: ajaxPagination
+   single: autoHide
 
-``ajaxPagination``
+``autoHide``
 #################################
 
 +------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``ajaxPagination``                                                                         |
+| **Option name**        | ``autoHide``                                                                               |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Use Ajax to paginate (clicking on "Next", etc) through galleries.                          |
+| Description            | Automatically fade out elements of the video player after a few moments of playback.       |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | * TubePress Pro                                                                            |
-|                        | * Any cloud-hosted TubePress                                                               |
+| Provided with          | All TubePress distributions                                                                |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``true``                                                                                   |
+| Default value          | ``fadeOnlyProgressBar``                                                                    |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
+| Valid values           | ``fadeBoth``                                                                               |
+|                        |   Fade both the progress bar and the video controls                                        |
+|                        | ``fadeNone``                                                                               |
+|                        |   Always show both the progress bar and the video controls                                 |
+|                        | ``fadeOnlyProgressBar``                                                                    |
+|                        |   Fade only the progress bar, but continue to show the video controls.                     |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
+| Shortcode example      | ``[tubepress autoHide="fadeNone"]``                                                        |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress ajaxPagination="true"]``                                                      |
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('autoHide="fadeNone"');``                              |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('ajaxPagination="true"');``                            |
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/player_parameters>`_                    |
 +------------------------+--------------------------------------------------------------------------------------------+
 
-.. _option-fluidThumbs:
+.. _option-fullscreen:
 
 .. index::
-   single: fluidThumbs
+   single: fullscreen
 
-``fluidThumbs``
+``fullscreen``
 #################################
 
 +------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``fluidThumbs``                                                                            |
+| **Option name**        | ``fullscreen``                                                                             |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Dynamically adjust the width of thumbnail columns to |br|                                  |
-|                        | best fit their container. This generally improves the appearance |br|                      |
-|                        | of the thumbnail gallery, but can cause problems in complex site layouts.                  |
+| Description            | Enable or disable the fullscreen playback option.                                          |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Provided with          | All TubePress distributions                                                                |
 +------------------------+--------------------------------------------------------------------------------------------+
@@ -203,756 +207,312 @@ Thumbnails
 +------------------------+--------------------------------------------------------------------------------------------+
 | Valid values           | ``true`` or ``false``                                                                      |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
+| Shortcode example      | ``[tubepress fullscreen="false"]``                                                         |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress fluidThumbs="false"]``                                                        |
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('fullscreen="false"');``                               |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('fluidThumbs="false"');``                              |
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/player_parameters>`_                    |
 +------------------------+--------------------------------------------------------------------------------------------+
 
-.. _option-hqThumbs:
+.. _option-modestBranding:
 
 .. index::
-   single: hqThumbs
+   single: modestBranding
 
-``hqThumbs``
+``modestBranding``
 #################################
 
 +------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``hqThumbs``                                                                               |
+| **Option name**        | ``modestBranding``                                                                         |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Use higher-quality thumbnails. This allows thumbnail sizes |br|                            |
-|                        | greater than 120px x 90x without causing distortion.                                       |
+| Description            | If enabled, hides the YouTube logo from the video controls area.                           |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | * TubePress Pro                                                                            |
-|                        | * Any cloud-hosted TubePress                                                               |
+| Provided with          | All TubePress distributions                                                                |
++------------------------+--------------------------------------------------------------------------------------------+
+| Default value          | ``true``                                                                                   |
++------------------------+--------------------------------------------------------------------------------------------+
+| Valid values           | ``true`` or ``false``                                                                      |
++------------------------+--------------------------------------------------------------------------------------------+
+| Shortcode example      | ``[tubepress modestBranding="false"]``                                                     |
++------------------------+--------------------------------------------------------------------------------------------+
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('modestBranding="false"');``                           |
++------------------------+--------------------------------------------------------------------------------------------+
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/player_parameters>`_                    |
++------------------------+--------------------------------------------------------------------------------------------+
+
+.. _option-showRelated:
+
+.. index::
+   single: showRelated
+
+``showRelated``
+#################################
+
++------------------------+--------------------------------------------------------------------------------------------+
+| **Option name**        | ``showRelated``                                                                            |
++------------------------+--------------------------------------------------------------------------------------------+
+| Description            | Toggles display of related videos when playback finishes.                                  |
++------------------------+--------------------------------------------------------------------------------------------+
+| Provided with          | All TubePress distributions                                                                |
++------------------------+--------------------------------------------------------------------------------------------+
+| Default value          | ``true``                                                                                   |
++------------------------+--------------------------------------------------------------------------------------------+
+| Valid values           | ``true`` or ``false``                                                                      |
++------------------------+--------------------------------------------------------------------------------------------+
+| Shortcode example      | ``[tubepress showRelated="false"]``                                                        |
++------------------------+--------------------------------------------------------------------------------------------+
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('showRelated="false"');``                              |
++------------------------+--------------------------------------------------------------------------------------------+
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/player_parameters>`_                    |
++------------------------+--------------------------------------------------------------------------------------------+
+
+.. _option-youtubeClosedCaptions:
+
+.. index::
+   single: youtubeClosedCaptions
+
+``youtubeClosedCaptions``
+#################################
+
++------------------------+--------------------------------------------------------------------------------------------+
+| **Option name**        | ``youtubeClosedCaptions``                                                                  |
++------------------------+--------------------------------------------------------------------------------------------+
+| Description            | Show closed captions by default.                                                           |
++------------------------+--------------------------------------------------------------------------------------------+
+| Provided with          | All TubePress distributions                                                                |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Default value          | ``false``                                                                                  |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Valid values           | ``true`` or ``false``                                                                      |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
+| Shortcode example      | ``[tubepress youtubeClosedCaptions="true"]``                                               |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress hqThumbs="true"]``                                                            |
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('youtubeClosedCaptions="true"');``                     |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('hqThumbs="true"');``                                  |
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/player_parameters>`_                    |
 +------------------------+--------------------------------------------------------------------------------------------+
 
-.. _option-paginationAbove:
+.. _option-youtubeDisableKeyboardControls:
 
 .. index::
-   single: paginationAbove
+   single: youtubeDisableKeyboardControls
 
-``paginationAbove``
+``youtubeDisableKeyboardControls``
 #################################
 
 +------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``paginationAbove``                                                                        |
+| **Option name**        | ``youtubeDisableKeyboardControls``                                                         |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Show pagination links ("Next", "Prev", etc) above the thumbnail |br|                       |
-|                        | gallery.                                                                                   |
+| Description            | Disable all keyboard controls for the video.                                               |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | Any TubePress distribution                                                                 |
+| Provided with          | All TubePress distributions                                                                |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``true``                                                                                   |
+| Default value          | ``false``                                                                                  |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Valid values           | ``true`` or ``false``                                                                      |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
+| Shortcode example      | ``[tubepress youtubeDisableKeyboardControls="true"]``                                      |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress paginationAbove="true"]``                                                     |
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('youtubeDisableKeyboardControls="true"');``            |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('paginationAbove="true"');``                           |
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/player_parameters>`_                    |
 +------------------------+--------------------------------------------------------------------------------------------+
 
-.. _option-paginationBelow:
+.. _option-youtubePlayerTheme:
 
 .. index::
-   single: paginationBelow
+   single: youtubePlayerTheme
 
-``paginationBelow``
+``youtubePlayerTheme``
 #################################
 
 +------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``paginationBelow``                                                                        |
+| **Option name**        | ``youtubePlayerTheme``                                                                     |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Show pagination links ("Next", "Prev", etc) below the thumbnail |br|                       |
-|                        | gallery.                                                                                   |
+| Description            | The color theme of the video player .                                                      |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | Any TubePress distribution                                                                 |
+| Provided with          | All TubePress distributions                                                                |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``true``                                                                                   |
+| Default value          | ``dark``                                                                                   |
++------------------------+--------------------------------------------------------------------------------------------+
+| Valid values           | ``dark`` or ``light``                                                                      |
++------------------------+--------------------------------------------------------------------------------------------+
+| Shortcode example      | ``[tubepress youtubePlayerTheme="light"]``                                                 |
++------------------------+--------------------------------------------------------------------------------------------+
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('youtubePlayerTheme="light"');``                       |
++------------------------+--------------------------------------------------------------------------------------------+
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/player_parameters>`_                    |
++------------------------+--------------------------------------------------------------------------------------------+
+
+.. _option-youtubeShowAnnotations:
+
+.. index::
+   single: youtubeShowAnnotations
+
+``youtubeShowAnnotations``
+#################################
+
++------------------------+--------------------------------------------------------------------------------------------+
+| **Option name**        | ``youtubeShowAnnotations``                                                                 |
++------------------------+--------------------------------------------------------------------------------------------+
+| Description            | Show video annotations by default.                                                         |
++------------------------+--------------------------------------------------------------------------------------------+
+| Provided with          | All TubePress distributions                                                                |
++------------------------+--------------------------------------------------------------------------------------------+
+| Default value          | ``false``                                                                                  |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Valid values           | ``true`` or ``false``                                                                      |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
+| Shortcode example      | ``[tubepress youtubeShowAnnotations="true"]``                                              |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress paginationBelow="true"]``                                                     |
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('youtubeShowAnnotations="true"');``                    |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('paginationBelow="true"');``                           |
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/player_parameters>`_                    |
 +------------------------+--------------------------------------------------------------------------------------------+
 
-.. _option-randomize_thumbnails:
+.. _option-youtubeShowPlayerControls:
 
 .. index::
-   single: randomize_thumbnails
+   single: youtubeShowPlayerControls
 
-``randomize_thumbnails``
+``youtubeShowPlayerControls``
 #################################
 
 +------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``randomize_thumbnails``                                                                   |
+| **Option name**        | ``youtubeShowPlayerControls``                                                              |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Most videos come with several thumbnails. By setting this option to |br|                   |
-|                        | true, each time a user visits a gallery they will see a randomly-selected |br|             |
-|                        | thumbnail for each video. This option conflicts with ``hqThumbs``.                         |
+| Description            | Toggles display of the video controls.                                                     |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | Any TubePress distribution                                                                 |
+| Provided with          | All TubePress distributions                                                                |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``true``                                                                                   |
+| Default value          | ``showDelayed``                                                                            |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
+| Valid values           | ``hide``                                                                                   |
+|                        |   Hide all video controls                                                                  |
+|                        | ``showImmediate``                                                                          |
+|                        |   Show the video controls. When the Flash player is used, Flash will load immediately.     |
+|                        | ``showDelayed``                                                                            |
+|                        |   Show the video controls. When the Flash player is used, Flash will |br|                  |
+|                        |   load when video playback begins                                                          |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
+| Shortcode example      | ``[tubepress youtubeShowPlayerControls="fadeNone"]``                                       |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress randomize_thumbnails="true"]``                                                |
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('youtubeShowPlayerControls="fadeNone"');``             |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('randomize_thumbnails="true"');``                      |
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/player_parameters>`_                    |
 +------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-resultsPerPage:
-
-.. index::
-   single: resultsPerPage
-
-``resultsPerPage``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``resultsPerPage``                                                                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | How many thumbnails to display on each page of a gallery.                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | Any TubePress distribution                                                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``20``                                                                                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any integer from 1 to 50                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress resultsPerPage="30"]``                                                        |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('resultsPerPage="30"');``                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-thumbHeight:
-
-.. index::
-   single: thumbHeight
-
-``thumbHeight``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``thumbHeight``                                                                            |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | The desired height (in pixels) of video thumbnails.                                        |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | Any TubePress distribution                                                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``90``                                                                                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any positive integer.                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress thumbHeight="60"]``                                                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('thumbHeight="60"');``                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-thumbWidth:
-
-.. index::
-   single: thumbWidth
-
-``thumbWidth``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``thumbWidth``                                                                             |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | The desired width (in pixels) of video thumbnails.                                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | Any TubePress distribution                                                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``120``                                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any positive integer.                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress thumbWidth="150"]``                                                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('thumbWidth="150"');``                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-Embedded Video Player
----------------------
-
-.. contents:: Embedded Video Player Options
-   :local:
-
-.. _option-autonext:
-
-.. index::
-   single: autoNext
-
-``autoNext``
-############
-
-+------------------------+-----------------------------------------------------------+
-| **Option name**        | ``autoNext``                                              |
-+------------------------+-----------------------------------------------------------+
-| Description            | Automatically start the next video in a gallery when |br| |
-|                        | playback of a video finishes.                             |
-+------------------------+-----------------------------------------------------------+
-| Provided with          | * TubePress Pro                                           |
-|                        | * Any cloud-hosted TubePress                              |
-+------------------------+-----------------------------------------------------------+
-| Default value          | ``false``                                                 |
-+------------------------+-----------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                     |
-+------------------------+-----------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                         |
-+------------------------+-----------------------------------------------------------+
-| Shortcode example      | ``[tubepress autoNext="true"]``                           |
-+------------------------+-----------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('autoNext="true"');`` |
-+------------------------+-----------------------------------------------------------+
-
-.. _option-autoplay:
-
-.. index::
-   single: autoplay
-
-``autoplay``
-############
-
-+------------------------+-----------------------------------------------------------+
-| **Option name**        | ``autoplay``                                              |
-+------------------------+-----------------------------------------------------------+
-| Description            | Automatically start video playback of *any* embedded |br| |
-|                        | video when the page is loaded.                            |
-+------------------------+-----------------------------------------------------------+
-| Provided with          | All TubePress distributions                               |
-+------------------------+-----------------------------------------------------------+
-| Default value          | ``false``                                                 |
-+------------------------+-----------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                     |
-+------------------------+-----------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                         |
-+------------------------+-----------------------------------------------------------+
-| Shortcode example      | ``[tubepress autoplay="true"]``                           |
-+------------------------+-----------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('autoplay="true"');`` |
-+------------------------+-----------------------------------------------------------+
-
-.. _option-embeddedHeight:
-
-.. index::
-   single: embeddedHeight
-
-``embeddedHeight``
-##################
-
-+------------------------+----------------------------------------------------------------+
-| **Option name**        | ``embeddedHeight``                                             |
-+------------------------+----------------------------------------------------------------+
-| Description            | The height, in pixels, of the embedded video player |br|       |
-|                        | that TubePress builds.                                         |
-+------------------------+----------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                    |
-+------------------------+----------------------------------------------------------------+
-| Default value          | ``350``                                                        |
-+------------------------+----------------------------------------------------------------+
-| Valid values           | Any positive integer                                           |
-+------------------------+----------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                              |
-+------------------------+----------------------------------------------------------------+
-| Shortcode example      | ``[tubepress embeddedHeight="350"]``                           |
-+------------------------+----------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('embeddedHeight="350"');`` |
-+------------------------+----------------------------------------------------------------+
-
-.. _option-embeddedWidth:
-
-.. index::
-   single: embeddedWidth
-
-``embeddedWidth``
-#################
-
-+------------------------+----------------------------------------------------------------+
-| **Option name**        | ``embeddedWidth``                                              |
-+------------------------+----------------------------------------------------------------+
-| Description            | The width, in pixels, of the embedded video player |br|        |
-|                        | that TubePress builds.                                         |
-+------------------------+----------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                    |
-+------------------------+----------------------------------------------------------------+
-| Default value          | ``425``                                                        |
-+------------------------+----------------------------------------------------------------+
-| Valid values           | Any positive integer                                           |
-+------------------------+----------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                              |
-+------------------------+----------------------------------------------------------------+
-| Shortcode example      | ``[tubepress embeddedWidth="350"]``                            |
-+------------------------+----------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('embeddedWidth="350"');``  |
-+------------------------+----------------------------------------------------------------+
-
-.. _option-enablejsapi:
-
-.. index::
-   single: enableJsApi
-
-``enableJsApi``
-###############
-
-+------------------------+-----------------------------------------------------------------+
-| **Option name**        | ``enableJsApi``                                                 |
-+------------------------+-----------------------------------------------------------------+
-| Description            | Enable or disable the TubePress JavaScript API for this |br|    |
-|                        | gallery. Enabling this API incurs a tiny performance |br|       |
-|                        | overhead, but is required for some features                     |
-|                        | (such as :ref:`autoNext <option-autoNext>`).                    |
-+------------------------+-----------------------------------------------------------------+
-| Provided with          | TubePress Pro                                                   |
-+------------------------+-----------------------------------------------------------------+
-| Default value          | ``true``                                                        |
-+------------------------+-----------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                           |
-+------------------------+-----------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                               |
-+------------------------+-----------------------------------------------------------------+
-| Shortcode example      | ``[tubepress enableJsApi="true"]``                              |
-+------------------------+-----------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('enableJsApi="true"');``    |
-+------------------------+-----------------------------------------------------------------+
-
-.. _option-lazyPlay:
-
-.. index::
-   single: lazyPlay
-
-``lazyPlay``
-############
-
-+------------------------+-----------------------------------------------------------------+
-| **Option name**        | ``lazyPlay``                                                    |
-+------------------------+-----------------------------------------------------------------+
-| Description            | If enabled, video playback will auto-start after users  |br|    |
-|                        | clicks a video's thumbnail.                                     |
-+------------------------+-----------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                     |
-+------------------------+-----------------------------------------------------------------+
-| Default value          | ``true``                                                        |
-+------------------------+-----------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                           |
-+------------------------+-----------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                               |
-+------------------------+-----------------------------------------------------------------+
-| Shortcode example      | ``[tubepress lazyPlay="true"]``                                 |
-+------------------------+-----------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('lazyPlay="true"');``       |
-+------------------------+-----------------------------------------------------------------+
-
-.. _option-loop:
-
-.. index::
-   single: loop
-
-``loop``
-############
-
-+------------------------+-------------------------------------------------------------------+
-| **Option name**        | ``loop``                                                          |
-+------------------------+-------------------------------------------------------------------+
-| Description            | If enabled, immediately restart playback of each video after |br| |
-|                        | it finishes.                                                      |
-+------------------------+-------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                       |
-+------------------------+-------------------------------------------------------------------+
-| Default value          | ``false``                                                         |
-+------------------------+-------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                             |
-+------------------------+-------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                 |
-+------------------------+-------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress loop="true"]``                                       |
-+------------------------+-------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('loop="true"');``             |
-+------------------------+-------------------------------------------------------------------+
-
-.. _option-playerImplementation:
-
-.. index::
-   single: playerImplementation
-
-``playerImplementation``
-########################
-
-+------------------------+---------------------------------------------------------------------------+
-| **Option name**        | ``playerImplementation``                                                  |
-+------------------------+---------------------------------------------------------------------------+
-| Description            | Defines the "brand" of the embedded video player.                         |
-+------------------------+---------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions except TubePress for Wix                      |
-+------------------------+---------------------------------------------------------------------------+
-| Default value          | ``provider_based``                                                        |
-+------------------------+---------------------------------------------------------------------------+
-| Valid values           | ``provider_based``                                                        |
-|                        |   Uses the provider's player (i.e. the standard YouTube player)           |
-|                        | ``embedplus``                                                             |
-|                        |   Plays videos with `EmbedPlus <http://www.embedplus.com/>`_              |
-|                        | ``longtail``                                                              |
-|                        |   Plays videos with `JW Player <http://www.jwplayer.com/>`_               |
-+------------------------+---------------------------------------------------------------------------+
-| Supported provider(s)  | YouTube                                                                   |
-+------------------------+---------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress playerImplementation="longtail"]``                           |
-+------------------------+---------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('playerImplementation="longtail"');`` |
-+------------------------+---------------------------------------------------------------------------+
-
-.. _option-playerLocation:
-
-.. index::
-   single: playerLocation; normal
-   single: playerLocation
-   single: playerLocation; popup
-   single: playerLocation; youtube
-   single: playerLocation; vimeo
-   single: playerLocation; shadowbox
-   single: playerLocation; jqmodal
-   single: playerLocation; static
-   single: playerLocation; solo
-   single: playerLocation; fancybox
-   single: playerLocation; tinybox
-   single: Shadowbox.js
-   single: jqModal
-   single: TinyBox
-   single: FancyBox
-
-``playerLocation``
-##################
-
-+------------------------+------------------------------------------------------------------------------+
-| **Option name**        | ``playerLocation``                                                           |
-+------------------------+------------------------------------------------------------------------------+
-| Description            | Defines the "location" of the embedded video player. This allows you |br|    |
-|                        | to choose the location and effect of how the embedded videos play.           |
-+------------------------+------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions, though availability varies                      |
-+------------------------+------------------------------------------------------------------------------+
-| Default value          | ``normal``                                                                   |
-+------------------------+------------------------------------------------------------------------------+
-| Valid values           | ``normal``                                                                   |
-|                        |   Embedded player is placed above thumbnail gallery                          |
-|                        | ``popup``                                                                    |
-|                        |   Videos play in an HTML popup window                                        |
-|                        | ``youtube``                                                                  |
-|                        |   User is taken to the video's home on youtube.com for viewing.              |
-|                        | ``vimeo``                                                                    |
-|                        |   User is taken to the video's home on vimeo.com for viewing.                |
-|                        | ``shadowbox``                                                                |
-|                        |   Video plays in a modal window with `Shadowbox.js`_                         |
-|                        | ``jqmodal``                                                                  |
-|                        |   Video plays in a modal window with `jqModal`_                              |
-|                        | ``solo``                                                                     |
-|                        |   Page refreshes, and video player replaces the thumbnail gallery            |
-|                        | ``static``                                                                   |
-|                        |   Like ``normal``, but each thumbnail click triggers a page refresh          |
-|                        | ``tinybox``                                                                  |
-|                        |   Video plays in a modal window with `TinyBox`_. Not available in free |br|  |
-|                        |   WordPress plugin.                                                          |
-|                        | ``fancybox``                                                                 |
-|                        |   Video plays in a modal window with `Fancybox`_. Not available in free |br| |
-|                        |   WordPress plugin.                                                          |
-+------------------------+------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                            |
-+------------------------+------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress playerLocation="popup"]``                                       |
-+------------------------+------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('playerLocation="popup"');``             |
-+------------------------+------------------------------------------------------------------------------+
-
-.. _Shadowbox.js: http://www.shadowbox-js.com/
-.. _jqModal: http://dev.iceburg.net/jquery/jqModal/
-.. _TinyBox: http://www.scriptiny.com/2009/05/javascript-popup-box/
-.. _Fancybox: http://fancybox.net/
-
-.. _option-showInfo:
-
-.. index::
-   single: showInfo
-
-``showInfo``
-############
-
-+------------------------+------------------------------------------------------------------------------+
-| **Option name**        | ``showInfo``                                                                 |
-+------------------------+------------------------------------------------------------------------------+
-| Description            | Show or hide the video's title, description, and other meta information |br| |
-|                        | on the embedded video itself before playback begins.                         |
-+------------------------+------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                  |
-+------------------------+------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                    |
-+------------------------+------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                        |
-+------------------------+------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                            |
-+------------------------+------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress showInfo="true"]``                                              |
-+------------------------+------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('showInfo="true');``                     |
-+------------------------+------------------------------------------------------------------------------+
 
 Video Feed
-----------
+--------------
 
 .. contents:: Video Feed Options
    :local:
 
-.. _option-orderBy:
+.. _option-developerKey:
 
 .. index::
-   single: orderBy
-   single: orderBy; commentCount
-   single: orderBy; default
-   single: orderBy; duration
-   single: orderBy; newest
-   single: orderBy; oldest
-   single: orderBy; position
-   single: orderBy; random
-   single: orderBy; rating
-   single: orderBy; relevance
-   single: orderBy; reversedPosition
-   single: orderBy; title
-   single: orderBy; viewCount
+   single: developerKey
 
-``orderBy``
-###########
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``orderBy``                                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Define the overall sort order of the video feed. This only applies, |br|                   |
-|                        | obviously, to video galleries and not individual videos.                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``default``                                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``commentCount``                                                                           |
-|                        |   Only applies to YouTube playlist galleries and selected Vimeo galleries. |br|            |
-|                        |   Videos with more comments will be shown before others. [1]_                              |
-|                        | ``default``                                                                                |
-|                        |   TubePress chooses the "best" sort order for the video source. |br|                       |
-|                        |   e.g. search-based galleries are sorted by ``relevance``, and |br|                        |
-|                        |   user uploads are sorted by ``newest``.                                                   |
-|                        | ``duration``                                                                               |
-|                        |   Only applies to YouTube playlist galleries. Longest-running videos shown |br|            |
-|                        |   first. [2]_                                                                              |
-|                        | ``newest``                                                                                 |
-|                        |   Newest videos first. [1]_                                                                |
-|                        | ``oldest``                                                                                 |
-|                        |   Only applies to the following Vimeo galleries: ``vimeoUploadedBy``, |br|                 |
-|                        |   ``vimeoLikes``, ``vimeoAppearsIn``, ``vimeoSearch``, |br|                                |
-|                        |   ``vimeoCreditedTo``, ``vimeoGroup``. [3]_                                                |
-|                        | ``position``                                                                               |
-|                        |   Only applies to YouTube playlist galleries. Videos will be shown in the order in |br|    |
-|                        |   which they appear in the playlist. [2]_                                                  |
-|                        | ``random``                                                                                 |
-|                        |   Only applies to Vimeo group-based galleries (``vimeoGroup``). Retrieves videos |br|      |
-|                        |   in a random order. [4]_                                                                  |
-|                        | ``rating``                                                                                 |
-|                        |   Highest-rated videos first. [1]_                                                         |
-|                        | ``relevance``                                                                              |
-|                        |   Only applies to search-based galleries. Videos with the highest relevance |br|           |
-|                        |   to the search terms will be shown first. [5]_                                            |
-|                        | ``reversedPosition``                                                                       |
-|                        |   Only applies to YouTube playlist galleries. Videos will be shown in the reverse |br|     |
-|                        |   order of the ``position`` sort order. [2]_                                               |
-|                        | ``title``                                                                                  |
-|                        |   Only applies to YouTube playlist galleries. Videos will be shown in |br|                 |
-|                        |   alphabetical order of their titles. [2]_                                                 |
-|                        | ``viewCount``                                                                              |
-|                        |   Most-viewed videos first. [1]_                                                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress orderBy="newest"]``                                                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('orderBy="newest"');``                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-perPageSort:
-
-.. index::
-   single: perPageSort
-   single: perPageSort; commentCount
-   single: perPageSort; duration
-   single: perPageSort; newest
-   single: perPageSort; none
-   single: perPageSort; oldest
-   single: perPageSort; random
-   single: perPageSort; rating
-   single: perPageSort; title
-   single: perPageSort; viewCount
-
-``perPageSort``
-###############
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``perPageSort``                                                                            |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Defines an additional sorting to apply to each individual |br|                             |
-|                        | page of a video gallery.                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``none``                                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``commentCount``                                                                           |
-|                        |   Videos with more comments will be shown before others.                                   |
-|                        | ``duration``                                                                               |
-|                        |   Longest-running videos shown first.                                                      |
-|                        | ``newest``                                                                                 |
-|                        |   Newer videos first.                                                                      |
-|                        | ``none``                                                                                   |
-|                        |   Do nothing.                                                                              |
-|                        | ``oldest``                                                                                 |
-|                        |   Older videos first.                                                                      |
-|                        | ``random``                                                                                 |
-|                        |   Shuffles the videos.                                                                     |
-|                        | ``rating``                                                                                 |
-|                        |   Highest-rated videos first.                                                              |
-|                        | ``title``                                                                                  |
-|                        |   Videos will be shown in alphabetical order of their titles.                              |
-|                        | ``viewCount``                                                                              |
-|                        |   Most-viewed videos first.                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress perPageSort="title"]``                                                        |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('perPageSort="title"');``                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-resultCountCap:
-
-.. index::
-   single: resultCountCap
-
-``resultCountCap``
-##################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``resultCountCap``                                                                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Set a maximum limit on the total number of videos in a gallery. |br|                       |
-|                        | This can both limit the number of videos that show up on a page |br|                       |
-|                        | (if ``resultsPerPage`` > ``resultCountCap``), or reduce the |br|                           |
-|                        | number of pagination links for a gallery. Set to ``0`` to disable any limit.               |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``0``                                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any non-negative integer                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress resultCountCap="100"]``                                                       |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('resultCountCap="100"');``                             |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-searchResultsRestrictedToUser:
-
-.. index::
-   single: searchResultsRestrictedToUser
-
-``searchResultsRestrictedToUser``
+``developerKey``
 #################################
 
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``searchResultsRestrictedToUser``                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | For keyword-based galleries, or during interactive searching, |br|                         |
-|                        | this option can filter the results to videos uploaded by the given user.                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | *empty*                                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any YouTube or Vimeo username                                                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress searchResultsRestrictedToUser="3hough"]``                                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('searchResultsRestrictedToUser="3hough"');``           |
-+------------------------+--------------------------------------------------------------------------------------------+
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Option name**        | ``developerKey``                                                                                                  |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Description            | YouTube API developer key. YouTube will use this developer |br|                                                   |
+|                        | key for logging and debugging purposes if you experience a |br|                                                   |
+|                        | service problem on their end.                                                                                     |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Provided with          | All downloadable TubePress distributions                                                                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Default value          | *hidden*                                                                                                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Valid values           | Any valid YouTube API key                                                                                         |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Shortcode example      | ``[tubepress developerKey="..."]``                                                                                |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('developerKey="..."');``                                                      |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/2.0/developers_guide_protocol_authentication#Authentication>`_ |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
 
-.. _option-videoBlacklist:
+.. _option-embeddableOnly:
 
 .. index::
-   single: videoBlacklist
+   single: embeddableOnly
 
-``videoBlacklist``
+``embeddableOnly``
 #################################
 
-+------------------------+----------------------------------------------------------------------------------------------+
-| **Option name**        | ``videoBlacklist``                                                                           |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Description            | A list of video IDs that should never appear in TubePress's output.                          |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                  |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Default value          | *empty*                                                                                      |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Valid values           | A comma-separated list of YouTube or Vimeo IDs                                               |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                            |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress videoBlacklist="HSrtIrVCm64, BnS-rTbFw2g, 3045633"]``                           |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('videoBlacklist="HSrtIrVCm64, BnS-rTbFw2g, 3045633"');`` |
-+------------------------+----------------------------------------------------------------------------------------------+
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Option name**        | ``embeddableOnly``                                                                                                |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Description            | Some videos have embedding disabled. Enabling this option will |br|                                               |
+|                        | exclude these videos from your galleries. Most users will never |br|                                              |
+|                        | need to modify this option.                                                                                       |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Provided with          | All downloadable TubePress distributions                                                                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Default value          | ``true``                                                                                                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Valid values           | ``true`` or ``false``                                                                                             |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Shortcode example      | ``[tubepress embeddableOnly="true"]``                                                                             |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('embeddableOnly="true"');``                                                   |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/2.0/reference#formatsp>`_                                      |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+
+.. _option-filter_racy:
+
+.. index::
+   single: filter_racy
+
+``filter_racy``
+#################################
+
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| **Option name**        | ``filter_racy``                                                                                                   |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Description            | Filter out restricted content. YouTube performs the filtering |br|                                                |
+|                        | much in the same manner as `SafeSearch Filtering for Google WebSearch`_.                                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Provided with          | All downloadable TubePress distributions                                                                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Default value          | ``moderate``                                                                                                      |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Valid values           | ``none``                                                                                                          |
+|                        |   YouTube will not perform any filtering.                                                                         |
+|                        | ``moderate``                                                                                                      |
+|                        |   YouTube will filter some videos.                                                                                |
+|                        | ``strict``                                                                                                        |
+|                        |   YouTube will try to exclude all restricted videos.                                                              |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Shortcode example      | ``[tubepress filter_racy="strict"]``                                                                              |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('filter_racy="strict"');``                                                    |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+| YouTube documentation  | `Click here <https://developers.google.com/youtube/2.0/reference#safeSearchsp>`_                                  |
++------------------------+-------------------------------------------------------------------------------------------------------------------+
+
+.. _SafeSearch Filtering for Google WebSearch: http://www.google.com/support/bin/static.py?page=searchguides.html&ctx=preferences&hl=en
 
 Video Meta Display
-------------------
+---------------------
 
-.. contents:: Video Meta Display Options
-   :local:
-
-.. _option-author:
+.. _option-rating:
 
 .. index::
-   single: author
+   single: rating
 
-``author``
+``rating``
 #################################
 
 +------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``author``                                                                                 |
+| **Option name**        | ``rating``                                                                                 |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video uploader's username.                                           |
+| Description            | Toggle display of the video's average rating.                                              |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Provided with          | All TubePress distributions                                                                |
 +------------------------+--------------------------------------------------------------------------------------------+
@@ -960,25 +520,23 @@ Video Meta Display
 +------------------------+--------------------------------------------------------------------------------------------+
 | Valid values           | ``true`` or ``false``                                                                      |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
+| Shortcode example      | ``[tubepress rating="true"]``                                                              |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress author="true"]``                                                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('author="true" ');``                                   |
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('rating="true"');``                                    |
 +------------------------+--------------------------------------------------------------------------------------------+
 
-.. _option-category:
+.. _option-ratings:
 
 .. index::
-   single: category
+   single: ratings
 
-``category``
+``ratings``
 #################################
 
 +------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``category``                                                                               |
+| **Option name**        | ``ratings``                                                                                |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video category.                                                      |
+| Description            | Toggle display of the number of times the video has been rated.                            |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Provided with          | All TubePress distributions                                                                |
 +------------------------+--------------------------------------------------------------------------------------------+
@@ -986,681 +544,11 @@ Video Meta Display
 +------------------------+--------------------------------------------------------------------------------------------+
 | Valid values           | ``true`` or ``false``                                                                      |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | YouTube                                                                                    |
+| Shortcode example      | ``[tubepress ratings="true"]``                                                             |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress category="true"]``                                                            |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('category="true" ');``                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-dateFormat:
-
-.. index::
-   single: dateFormat
-
-``dateFormat``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``dateFormat``                                                                             |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Set the textual formatting of date information for videos. |br|                            |
-|                        | See `date()`_ for examples.                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``M j, Y``                                                                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any valid format for PHP's `date()`_ function                                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress dateFormat="l jS \of F Y h:i:s A"]``                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('dateFormat="l jS \of F Y h:i:s A"');``                |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _date(): http://us.php.net/date
-
-.. _option-description:
-
-.. index::
-   single: description
-
-``description``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``description``                                                                            |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video description.                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress description="true"]``                                                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('description="true" ');``                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-descriptionLimit:
-
-.. index::
-   single: descriptionLimit
-
-``descriptionLimit``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``descriptionLimit``                                                                       |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | The maximum number of characters of a video's description that |br|                        |
-|                        | should be displayed. Descriptions over this limit will be truncated |br|                   |
-|                        | with ``...``. Set to ``0`` for no limit.                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``0``                                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any non-negative integer                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress descriptionLimit="150"]``                                                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('descriptionLimit="150"');``                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-id:
-
-.. index::
-   single: id
-
-``id``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``id``                                                                                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video ID.                                                            |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress id="true"]``                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('id="true" ');``                                       |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-length:
-
-.. index::
-   single: length
-
-``length``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``length``                                                                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video runtime.                                                       |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``true``                                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo                                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress length="false"]``                                                             |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('length="false"');``                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-relativeDates:
-
-.. index::
-   single: relativeDates
-
-``relativeDates``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``relativeDates``                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of relative dates, such as "last year" instead |br|                         |
-|                        | of "Nov 3, 1980"                                                                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo or YouTube                                                                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress relativeDates="true"]``                                                       |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('relativeDates="true" ');``                            |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-tags:
-
-.. index::
-   single: tags
-
-``tags``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``tags``                                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video keywords.                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo                                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress tags="true"]``                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('tags="true" ');``                                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-title:
-
-.. index::
-   single: title
-
-``title``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``title``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video title.                                                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``true``                                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress title="false"]``                                                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('title="false"');``                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-uploaded:
-
-.. index::
-   single: uploaded
-
-``uploaded``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``uploaded``                                                                               |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video upload date.                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress uploaded="true"]``                                                            |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('uploaded="true"');``                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-url:
-
-.. index::
-   single: url
-
-``url``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``url``                                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video URL.                                                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress url="true"]``                                                                 |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('url="true"');``                                       |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-views:
-
-.. index::
-   single: views
-
-``views``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``views``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Toggle display of the video view count.                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``true``                                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress views="false"]``                                                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('views="false"');``                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-Interactive Search
-------------------
-
-.. contents:: Interactive Search Options
-   :local:
-
-.. _option-searchProvider:
-
-.. index::
-   single: searchProvider
-
-``searchProvider``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``searchProvider``                                                                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | The name of a video provider (e.g. YouTube or Vimeo) which |br|                            |
-|                        | should be searched for matching videos.                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | *empty*                                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | The name of a search provider. Current either ``youtube`` or ``vimeo``.                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress searchProvider="vimeo"]``                                                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('searchProvider="vimeo"');``                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-searchResultsDomId:
-
-.. index::
-   single: searchResultsDomId
-
-``searchResultsDomId``
-#################################
-
-+------------------------+----------------------------------------------------------------------------------------------+
-| **Option name**        | ``searchResultsDomId``                                                                       |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Description            | Used with the ``detached`` ``playerLocation`` option, this option |br|                       |
-|                        | defines a `jQuery selector`_ for which TubePress should place the |br|                       |
-|                        | search results.                                                                              |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Provided with          | TubePress Pro                                                                                |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Default value          | *empty*                                                                                      |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Valid values           | Any valid `jQuery selector`_                                                                 |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                            |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress searchResultsDomId="#tubepress-search-results-div"]``                           |
-+------------------------+----------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('searchResultsDomId="#tubepress-search-results-div"');`` |
-+------------------------+----------------------------------------------------------------------------------------------+
-
-.. _jQuery selector: http://api.jquery.com/category/selectors/
-
-.. _option-searchResultsOnly:
-
-.. index::
-   single: searchResultsOnly
-
-``searchResultsOnly``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``searchResultsOnly``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | If set to true, this shortcode will produce search results only |br|                       |
-|                        | after the user has submitted search terms. It will be "invisible" |br|                     |
-|                        | if the user is not searching.                                                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress searchResultsOnly="true"]``                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('searchResultsOnly="true"');``                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-searchResultsUrl:
-
-.. index::
-   single: searchResultsUrl
-
-``searchResultsUrl``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``searchResultsUrl``                                                                       |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | A URL defining where TubePress should send the user's search |br|                          |
-|                        | terms. By default, this is ``$_SERVER[PHP_SELF]``.                                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All TubePress distributions                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | *empty*                                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any absolute URL                                                                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress searchResultsUrl="http://mysite.com/search.php"]``                            |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('searchResultsUrl="http://mysite.com/search.php"');``  |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-API Cache
----------
-
-.. contents:: API Cache Options
-   :local:
-
-.. _option-cacheCleaningFactor:
-
-.. index::
-   single: cacheCleaningFactor
-
-``cacheCleaningFactor``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``cacheCleaningFactor``                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Defines how often TubePress will perform a full clean of its API cache. |br|               |
-|                        | If you enter ``x``, the API cache will be cleaned approximately every 1/``x`` |br|         |
-|                        | cache writes. Enter ``0`` to disable all cache cleaning.                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All downloadable TubePress distributions                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``20``                                                                                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any non-negative integer                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress cacheCleaningFactor="0"]``                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('cacheCleaningFactor="0"');``                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-cacheDirectory:
-
-.. index::
-   single: cacheDirectory
-
-``cacheDirectory``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``cacheDirectory``                                                                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | The absolute path of a directory in which the TubePress API cache |br|                     |
-|                        | can store its contents. This directory must be writable by the |br|                        |
-|                        | web server's PHP process owner. If this option is left empty, TubePress |br|               |
-|                        | will attempt to find and use the system temporary directory.                               |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All downloadable TubePress distributions                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | *empty*                                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | An absolute path of a writeable (by the PHP process owner) |br|                            |
-|                        | directory on the web server, or empty.                                                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress cacheDirectory="/tmp/tubepress-cache"]``                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('cacheDirectory="/tmp/tubepress-cache"');``            |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-cacheEnabled:
-
-.. index::
-   single: cacheEnabled
-
-``cacheEnabled``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``cacheEnabled``                                                                           |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Enables or disables the TubePress API cache. This can significantly |br|                   |
-|                        | improve the performance of TubePress at the slight expense of freshness.                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All downloadable TubePress distributions                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress cacheEnabled="true"]``                                                        |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('cacheEnabled="true"');``                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-cacheLifetimeSeconds:
-
-.. index::
-   single: cacheLifetimeSeconds
-
-``cacheLifetimeSeconds``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``cacheLifetimeSeconds``                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | How long, in seconds, before an item in the TubePress API cache is |br|                    |
-|                        | considered to be stale.                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All downloadable TubePress distributions                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``3600``                                                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any non-negative integer.                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress cacheLifetimeSeconds="1800"]``                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('cacheLifetimeSeconds="1800"');``                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-Advanced
---------
-
-.. contents:: Advanced Options
-   :local:
-
-.. _option-debugging_enabled:
-
-.. index::
-   single: debugging_enabled
-
-``debugging_enabled``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``debugging_enabled``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Enables or disables TubePress debugging. Keeping this enabled |br|                         |
-|                        | is a slight privacy risk, so if you are not experiencing difficulty |br|                   |
-|                        | with TubePress then feel free to disable it.                                               |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All downloadable TubePress distributions                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress debugging_enabled="true"]``                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('debugging_enabled="true"');``                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-galleryId:
-
-.. index::
-   single: galleryId
-
-``galleryId``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``galleryId``                                                                              |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Explicitly set the unique identifier of this HTML element. |br|                            |
-|                        | By default, TubePress will assign a large random number to each |br|                       |
-|                        | element that it produces. This allows TubePress to differentiate and |br|                  |
-|                        | coordinate between multiple elements on the same page. By setting |br|                     |
-|                        | this option, you can choose a constant ID so that you can refer to |br|                    |
-|                        | the element via JavaScript.                                                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All downloadable TubePress distributions                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | *empty*                                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | Any string, though a positive integer is recommended.                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress galleryId="12345"]``                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('galleryId="12345"');``                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-httpMethod:
-
-.. index::
-   single: httpMethod
-
-``httpMethod``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``httpMethod``                                                                             |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Defines the HTTP method to use for most Ajax operations that |br|                          |
-|                        | TubePress performs. This can be useful to change when TubePress is |br|                    |
-|                        | used in web servers with tight security requirements.                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | All downloadable TubePress distributions                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``GET``                                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``GET`` or ``POST`` (case **sensitive**)                                                   |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress httpMethod="POST"]``                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('httpMethod="POST"');``                                |
-+------------------------+--------------------------------------------------------------------------------------------+
-
-.. _option-https:
-
-.. index::
-   single: https
-
-``https``
-#################################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``https``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Serve thumbnails and embedded video player over a secure connection. |br|                  |
-|                        | This is useful if you are running TubePress inside an HTTPS-only site.                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | TubePress Pro only                                                                         |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | YouTube                                                                                    |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress https="true"]``                                                               |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('https="true"');``                                     |
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('ratings="true"');``                                   |
 +------------------------+--------------------------------------------------------------------------------------------+
 
 .. |br| raw:: html
 
   <br />
-
-.. rubric:: Footnotes
-
-.. [1] `YouTube documentation <https://developers.google.com/youtube/2.0/reference#orderbysp>`_. Vimeo documentation
-       for `search <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getByTag>`_,
-       `user uploads <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getUploaded>`_,
-       `user likes <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getLikes>`_,
-       `user appears in <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getAppearsIn>`_,
-       `credited to <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getAll>`_,
-       and `groups <https://developer.vimeo.com/apis/advanced/methods/vimeo.groups.getVideos>`_.
-.. [2] `YouTube documentation <https://developers.google.com/youtube/2.0/reference#orderbysp>`_.
-.. [3] Vimeo documentation for `search <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getByTag>`_,
-       `user uploads <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getUploaded>`_,
-       `user likes <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getLikes>`_,
-       `user appears in <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getAppearsIn>`_,
-       `credited to <https://developer.vimeo.com/apis/advanced/methods/vimeo.videos.getAll>`_,
-       and `groups <https://developer.vimeo.com/apis/advanced/methods/vimeo.groups.getVideos>`_.
-.. [4] `Vimeo documentation <https://developer.vimeo.com/apis/advanced/methods/vimeo.groups.getVideos>`_.
-.. [5] `YouTube documentation <https://developers.google.com/youtube/2.0/reference#orderbysp>`_.
-       `Vimeo documentation <https://developers.google.com/youtube/2.0/reference#orderbysp>`_.

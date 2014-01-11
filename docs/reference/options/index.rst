@@ -6,3 +6,4 @@ Options
 
    core
    youtube
+   vimeo
