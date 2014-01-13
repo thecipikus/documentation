@@ -1,3 +1,6 @@
+.. index::
+   single: interactive search; overview
+
 Interactive Searching
 =====================
 
@@ -24,6 +27,9 @@ your needs. To use the feature, you'll need to invoke TubePress twice:
 
 Let's go over each invocation in detail.
 
+.. index::
+   single: interactive search; input
+
 .. _interactive-search-input:
 
 Search Input
@@ -48,6 +54,9 @@ just set ``searchResultsUrl`` (most users shouldn't need to do this).
 
 Now that you have a search input form, you'll need to invoke TubePress somewhere else to display the search results.
 
+.. index::
+   single: interactive search; output
+
 .. _interactive-search-results-standard:
 
 Search Results
@@ -71,6 +80,9 @@ it has search results by setting ``searchResultsOnly``:
   [tubepress output="searchResults" searchProvider="youtube" searchResultsOnly="true"]
 
 To configure the resulting thumbnail gallery of search results, simply add any TubePress options to this shortcode.
+
+.. index::
+   single: interactive search; output (Ajax)
 
 .. _interactive-search-results-ajax:
 

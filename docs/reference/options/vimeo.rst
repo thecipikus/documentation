@@ -15,7 +15,7 @@ Gallery Sources
 .. _mode-vimeoAlbum:
 
 .. index::
-   single: mode; vimeoAlbum
+   single: gallery source; vimeoAlbum
 
 ``vimeoAlbum``
 #################################
@@ -36,7 +36,7 @@ Gallery Sources
 .. _mode-vimeoAppearsIn:
 
 .. index::
-   single: mode; vimeoAppearsIn
+   single: gallery source; vimeoAppearsIn
 
 ``vimeoAppearsIn``
 #################################
@@ -59,7 +59,7 @@ Gallery Sources
 .. _mode-vimeoChannel:
 
 .. index::
-   single: mode; vimeoChannel
+   single: gallery source; vimeoChannel
 
 ``vimeoChannel``
 #################################
@@ -80,7 +80,7 @@ Gallery Sources
 .. _mode-vimeoCreditedTo:
 
 .. index::
-   single: mode; vimeoCreditedTo
+   single: gallery source; vimeoCreditedTo
 
 ``vimeoCreditedTo``
 #################################
@@ -101,7 +101,7 @@ Gallery Sources
 .. _mode-vimeoGroup:
 
 .. index::
-   single: mode; vimeoGroup
+   single: gallery source; vimeoGroup
 
 ``vimeoGroup``
 #################################
@@ -122,7 +122,7 @@ Gallery Sources
 .. _mode-vimeoLikes:
 
 .. index::
-   single: mode; vimeoLikes
+   single: gallery source; vimeoLikes
 
 ``vimeoLikes``
 #################################
@@ -143,7 +143,7 @@ Gallery Sources
 .. _mode-vimeoSearch:
 
 .. index::
-   single: mode; vimeoSearch
+   single: gallery source; vimeoSearch
 
 ``vimeoSearch``
 #################################
@@ -164,7 +164,7 @@ Gallery Sources
 .. _mode-vimeoUploadedBy:
 
 .. index::
-   single: mode; vimeoUploadedBy
+   single: gallery source; vimeoUploadedBy
 
 ``vimeoLikes``
 #################################
@@ -191,7 +191,8 @@ Embedded Video Player
 .. _option-playerColor:
 
 .. index::
-   single: playerColor
+   single: options (by name); playerColor
+   single: video player; Vimeo color
 
 ``playerColor``
 #################################
@@ -227,7 +228,8 @@ Video Feed
 .. _option-vimeoKey:
 
 .. index::
-   single: vimeoKey
+   single: options (by name); vimeoKey
+   single: video feed; Vimeo API key
 
 ``vimeoKey``
 #################################
@@ -253,7 +255,8 @@ Video Feed
 .. _option-vimeoSecret:
 
 .. index::
-   single: vimeoSecret
+   single: options (by name); vimeoSecret
+   single: video feed; Vimeo API secret
 
 ``vimeoSecret``
 #################################
@@ -285,7 +288,7 @@ Video Meta Display
 .. _option-likes:
 
 .. index::
-   single: likes
+   single: options (by name); likes
 
 ``likes``
 #################################

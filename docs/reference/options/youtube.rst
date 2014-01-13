@@ -15,7 +15,7 @@ Gallery Sources
 .. _mode-playlist:
 
 .. index::
-   single: mode; playlist
+   single: gallery source; playlist
 
 ``playlist``
 #################################
@@ -39,7 +39,7 @@ Gallery Sources
 .. _mode-favorites:
 
 .. index::
-   single: mode; favorites
+   single: gallery source; favorites
 
 ``favorites``
 #################################
@@ -62,7 +62,7 @@ Gallery Sources
 .. _mode-tag:
 
 .. index::
-   single: mode; tag
+   single: gallery source; tag
 
 ``tag``
 #################################
@@ -87,7 +87,7 @@ Gallery Sources
 .. _mode-user:
 
 .. index::
-   single: mode; user
+   single: gallery source; user
 
 ``user``
 #################################
@@ -110,7 +110,7 @@ Gallery Sources
 .. _mode-youtubeMostPopular:
 
 .. index::
-   single: mode; youtubeMostPopular
+   single: gallery source; youtubeMostPopular
 
 ``youtubeMostPopular``
 #################################
@@ -133,7 +133,7 @@ Gallery Sources
 .. _mode-youtubeRelated:
 
 .. index::
-   single: mode; youtubeRelated
+   single: gallery source; youtubeRelated
 
 ``youtubeRelated``
 #################################
@@ -160,7 +160,7 @@ Embedded Video Player
 .. _option-autoHide:
 
 .. index::
-   single: autoHide
+   single: video player; auto-hide YouTube controls
 
 ``autoHide``
 #################################
@@ -191,7 +191,7 @@ Embedded Video Player
 .. _option-fullscreen:
 
 .. index::
-   single: fullscreen
+   single: video player; fullscreen playback
 
 ``fullscreen``
 #################################
@@ -217,7 +217,7 @@ Embedded Video Player
 .. _option-modestBranding:
 
 .. index::
-   single: modestBranding
+   single: video player; YouTube modest branding
 
 ``modestBranding``
 #################################
@@ -243,7 +243,7 @@ Embedded Video Player
 .. _option-showRelated:
 
 .. index::
-   single: showRelated
+   single: video player; related videos
 
 ``showRelated``
 #################################
@@ -269,7 +269,7 @@ Embedded Video Player
 .. _option-youtubeClosedCaptions:
 
 .. index::
-   single: youtubeClosedCaptions
+   single: video player; closed captions
 
 ``youtubeClosedCaptions``
 #################################
@@ -295,7 +295,7 @@ Embedded Video Player
 .. _option-youtubeDisableKeyboardControls:
 
 .. index::
-   single: youtubeDisableKeyboardControls
+   single: video player; keyboard controls
 
 ``youtubeDisableKeyboardControls``
 #################################
@@ -321,7 +321,7 @@ Embedded Video Player
 .. _option-youtubePlayerTheme:
 
 .. index::
-   single: youtubePlayerTheme
+   single: video player; YouTube theme
 
 ``youtubePlayerTheme``
 #################################
@@ -347,7 +347,7 @@ Embedded Video Player
 .. _option-youtubeShowAnnotations:
 
 .. index::
-   single: youtubeShowAnnotations
+   single: video player; annotations
 
 ``youtubeShowAnnotations``
 #################################
@@ -373,7 +373,7 @@ Embedded Video Player
 .. _option-youtubeShowPlayerControls:
 
 .. index::
-   single: youtubeShowPlayerControls
+   single: video player; showing controls
 
 ``youtubeShowPlayerControls``
 #################################
@@ -411,7 +411,8 @@ Video Feed
 .. _option-developerKey:
 
 .. index::
-   single: developerKey
+   single: options (by name); developerKey
+   single: video feed; YouTube developer key
 
 ``developerKey``
 #################################
@@ -439,7 +440,7 @@ Video Feed
 .. _option-embeddableOnly:
 
 .. index::
-   single: embeddableOnly
+   single: options (by name); embeddableOnly
 
 ``embeddableOnly``
 #################################
@@ -467,7 +468,8 @@ Video Feed
 .. _option-filter_racy:
 
 .. index::
-   single: filter_racy
+   single: options (by name); filter_racy
+   single: video feed; filtering restricted content
 
 ``filter_racy``
 #################################
@@ -504,7 +506,7 @@ Video Meta Display
 .. _option-rating:
 
 .. index::
-   single: rating
+   single: options (by name); rating
 
 ``rating``
 #################################
@@ -528,7 +530,7 @@ Video Meta Display
 .. _option-ratings:
 
 .. index::
-   single: ratings
+   single: options (by name); ratings
 
 ``ratings``
 #################################
@@ -547,6 +549,34 @@ Video Meta Display
 | Shortcode example      | ``[tubepress ratings="true"]``                                                             |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Standalone PHP example | ``TubePressPro::getHtmlForShortcode('ratings="true"');``                                   |
++------------------------+--------------------------------------------------------------------------------------------+
+
+Thumbnails
+---------------------
+
+.. _option-youtubeHideBlackBars:
+
+.. index::
+   single: options (by name); youtubeHideBlackBars
+   single: thumbnails; black bars
+
+``youtubeHideBlackBars``
+#################################
+
++------------------------+--------------------------------------------------------------------------------------------+
+| **Option name**        | ``youtubeHideBlackBars``                                                                   |
++------------------------+--------------------------------------------------------------------------------------------+
+| Description            | Hides the "black bars" on most YouTube thumbnails.                                         |
++------------------------+--------------------------------------------------------------------------------------------+
+| Provided with          | :doc:`../../manual/add-ons/youtube-black-bars-remover`                                     |
++------------------------+--------------------------------------------------------------------------------------------+
+| Default value          | ``false``                                                                                  |
++------------------------+--------------------------------------------------------------------------------------------+
+| Valid values           | ``true`` or ``false``                                                                      |
++------------------------+--------------------------------------------------------------------------------------------+
+| Shortcode example      | ``[tubepress youtubeHideBlackBars="true"]``                                                |
++------------------------+--------------------------------------------------------------------------------------------+
+| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('youtubeHideBlackBars="true"');``                      |
 +------------------------+--------------------------------------------------------------------------------------------+
 
 .. |br| raw:: html

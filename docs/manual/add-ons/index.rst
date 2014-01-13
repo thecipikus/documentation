@@ -1,0 +1,7 @@
+Official TubePress Add-Ons
+==========================
+
+.. toctree::
+   :maxdepth: 1
+
+   youtube-black-bars-remover

@@ -24,8 +24,8 @@ There are two independent installation paths for TubePress:
 
  1. One of two **downloadable** software packages:
 
-   * Free WordPress Plugin
-   * TubePress Pro (for WordPress and/or any PHP site)
+   * :doc:`../manual/wordpress/index`
+   * TubePress Pro (for :doc:`WordPress <../manual/wordpress/index>` and/or :doc:`any PHP site <../manual/wordpress/index>`)
 
  2. One of two **cloud-hosted** TubePress installations:
 

@@ -1,3 +1,6 @@
+.. index::
+   single: video gallery; overview
+
 Video Galleries
 ===============
 
@@ -19,6 +22,9 @@ The process to create a video gallery is always the same ...
     refer to your specific :doc:`user manual <../../manual/index>`.
 
 .. _video-galleries-multiple-sources-feature:
+
+.. index::
+   single: video gallery; multiple sources
 
 Video Galleries from Multiple Sources
 -------------------------------------
