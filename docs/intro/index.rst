@@ -6,8 +6,8 @@ Introduction
 Features
 --------
 
-TubePress allows website builders of any skill level to add dynamic video features to their site. This section gives a
-brief overview of these features.
+TubePress allows website builders of any skill level to add dynamic video features to their site. Click a feature
+below to learn more about what TubePress can do for your site.
 
 .. toctree::
    :maxdepth: 1
@@ -30,7 +30,7 @@ There are two independent installation paths for TubePress:
  2. One of two **cloud-hosted** TubePress installations:
 
    * `TubePress Express <http://express.tubepress.com/>`_
-   * `Wix App Market <http://www.wix.com/about/app-market#!app-market/cbqa/apps/tubepress/overview>`_
+   * `TubePress for Wix <http://www.wix.com/about/app-market#!app-market/cbqa/apps/tubepress/overview>`_
 
 Either installation path provides nearly identical features, but there are a number of drawbacks and
 advantages to each:

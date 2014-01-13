@@ -26,5 +26,6 @@ Manual Contents
 
    install-upgrade-uninstall
    Basic Usage <usage>
-   Using Add-Ons & Themes <addons-and-themes>
+   Add-Ons & Themes <addons-and-themes>
+   Advanced Topics <advanced>
    FAQ & Troubleshooting <faq-and-troubleshooting>

@@ -49,12 +49,13 @@ with the options that you set in ``Settings > TubePress``. On this page you woul
   [tubepress]
 
 where you want TubePress to inject its content. Follow this procedure for unlimited galleries on
-unlimited posts/pages. Just use any TubePress shortcode to control the gallery content.
+unlimited posts/pages. Just use :doc:`any TubePress option <../../reference/options/index>` to control
+TubePress.
 
 Add TubePress to WordPress Templates
 ------------------------------------
 
-.. note:: TubePress Pro is required to use this feature
+.. note:: TubePress Pro is required to use this feature, and basic PHP knowledge is recommended.
 
 Follow these instructions to use TubePress Pro inside WordPress templates. The code snippet
 below shows the `world's simplest WordPress template`_ with TubePress Pro added. As you can see by the highlighted lines
@@ -86,10 +87,10 @@ below, there are only 2 steps:
 
 Notes on the two highlighted lines above:
 
- 1. Include the TubePress Pro library file ``TubePressPro.php``.
- 2. The ``getHtmlForShortcode()`` static function takes a single string parameter which is any valid
-    TubePress shortcode. It returns the HTML output of TubePress. You may repeat this function call as many
-    times as you like.
+ 1. Include the TubePress Pro library file ``TubePressPro.php``. Not that in the code sample above you will need to replace ``tubepress_pro_x_y_z`` with the actual version of TubePress Pro that you downloaded (.e.g. ``tubepress_pro_3_2_6``).
+ 2. The ``getHtmlForShortcode()`` static function takes a single string parameter which is any space-separated combination of
+    :doc:`TubePress options <../../reference/options/index>`. It returns the HTML output of TubePress as a string.
+    You may repeat this function call as many times as you like, any with any combination of options.
 
 Changing the Default Language
 -----------------------------

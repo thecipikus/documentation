@@ -66,7 +66,7 @@ Installation of TubePress Pro into a WordPress environment must be performed man
  3. Follow `these instructions <http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation>`_ to
     finish the manual installation and activation of the plugin.
  4. *Vimeo users only*. Perform the :ref:`one-time Vimeo API setup <wordpress-install-vimeo-api-setup>`.
- 5. *Optional*. :ref:`Install support for Shadowbox.js and/or JW Player 4 <wordpress-install-optional-pro-installs>`.
+ 5. *Optional*. :ref:`Install support for Shadowbox.js and/or JW Player 5 <wordpress-install-optional-pro-installs>`.
 
 .. _wordpress-install-vimeo-api-setup:
 

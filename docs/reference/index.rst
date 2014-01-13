@@ -2,6 +2,11 @@ Reference
 =========
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    options/index
+
+Index
+--------
+
+:ref:`Documentation Index <genindex>`

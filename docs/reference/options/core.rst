@@ -13,7 +13,8 @@ General
 .. _option-mode:
 
 .. index::
-   single: mode
+   single: Options (by name); mode
+   single: Gallery; video source
 
 ``mode``
 #################################
@@ -25,9 +26,10 @@ General
 +------------------------+--------------------------------------------------------------------------------------------+
 | Provided with          | Any TubePress distribution                                                                 |
 +------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``youtubeMostPopular``                                                                     |
+| Default value          | :ref:`youtubeMostPopular <mode-youtubeMostPopular>`                                        |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Valid values           | * :ref:`Any YouTube source <youtube-gallery-sources>`                                      |
+|                        | * :ref:`Any Vimeo source <vimeo-gallery-sources>`                                          |
 +------------------------+--------------------------------------------------------------------------------------------+
 | Supported provider(s)  | Vimeo and YouTube                                                                          |
 +------------------------+--------------------------------------------------------------------------------------------+
@@ -39,7 +41,7 @@ General
 .. _option-output:
 
 .. index::
-   single: output
+   single: Options (by name); output
 
 ``output``
 #################################
@@ -75,7 +77,7 @@ General
 .. _option-video:
 
 .. index::
-   single: video
+   single: Options (by name); video
 
 ``video``
 #################################
@@ -107,7 +109,7 @@ Thumbnails
 .. _option-ajaxPagination:
 
 .. index::
-   single: ajaxPagination
+   single: Options (by name); ajaxPagination
 
 ``ajaxPagination``
 #################################
@@ -134,7 +136,7 @@ Thumbnails
 .. _option-fluidThumbs:
 
 .. index::
-   single: fluidThumbs
+   single: Options (by name); fluidThumbs
 
 ``fluidThumbs``
 #################################
@@ -162,7 +164,7 @@ Thumbnails
 .. _option-hqThumbs:
 
 .. index::
-   single: hqThumbs
+   single: Options (by name); hqThumbs
 
 ``hqThumbs``
 #################################
@@ -190,7 +192,7 @@ Thumbnails
 .. _option-paginationAbove:
 
 .. index::
-   single: paginationAbove
+   single: Options (by name); paginationAbove
 
 ``paginationAbove``
 #################################
@@ -217,7 +219,7 @@ Thumbnails
 .. _option-paginationBelow:
 
 .. index::
-   single: paginationBelow
+   single: Options (by name); paginationBelow
 
 ``paginationBelow``
 #################################
@@ -244,7 +246,7 @@ Thumbnails
 .. _option-randomize_thumbnails:
 
 .. index::
-   single: randomize_thumbnails
+   single: Options (by name); randomize_thumbnails
 
 ``randomize_thumbnails``
 #################################
@@ -272,7 +274,7 @@ Thumbnails
 .. _option-resultsPerPage:
 
 .. index::
-   single: resultsPerPage
+   single: Options (by name); resultsPerPage
 
 ``resultsPerPage``
 #################################
@@ -298,7 +300,7 @@ Thumbnails
 .. _option-thumbHeight:
 
 .. index::
-   single: thumbHeight
+   single: Options (by name); thumbHeight
 
 ``thumbHeight``
 #################################
@@ -324,7 +326,7 @@ Thumbnails
 .. _option-thumbWidth:
 
 .. index::
-   single: thumbWidth
+   single: Options (by name); thumbWidth
 
 ``thumbWidth``
 #################################
@@ -356,7 +358,7 @@ Embedded Video Player
 .. _option-autonext:
 
 .. index::
-   single: autoNext
+   single: Options (by name); autoNext
 
 ``autoNext``
 ############
@@ -384,7 +386,7 @@ Embedded Video Player
 .. _option-autoplay:
 
 .. index::
-   single: autoplay
+   single: Options (by name); autoplay
 
 ``autoplay``
 ############
@@ -411,7 +413,7 @@ Embedded Video Player
 .. _option-embeddedHeight:
 
 .. index::
-   single: embeddedHeight
+   single: Options (by name); embeddedHeight
 
 ``embeddedHeight``
 ##################
@@ -438,7 +440,7 @@ Embedded Video Player
 .. _option-embeddedWidth:
 
 .. index::
-   single: embeddedWidth
+   single: Options (by name); embeddedWidth
 
 ``embeddedWidth``
 #################
@@ -465,7 +467,7 @@ Embedded Video Player
 .. _option-enablejsapi:
 
 .. index::
-   single: enableJsApi
+   single: Options (by name); enableJsApi
 
 ``enableJsApi``
 ###############
@@ -494,7 +496,7 @@ Embedded Video Player
 .. _option-lazyPlay:
 
 .. index::
-   single: lazyPlay
+   single: Options (by name); lazyPlay
 
 ``lazyPlay``
 ############
@@ -521,7 +523,7 @@ Embedded Video Player
 .. _option-loop:
 
 .. index::
-   single: loop
+   single: Options (by name); loop
 
 ``loop``
 ############
@@ -548,7 +550,7 @@ Embedded Video Player
 .. _option-playerImplementation:
 
 .. index::
-   single: playerImplementation
+   single: Options (by name); playerImplementation
 
 ``playerImplementation``
 ########################
@@ -580,7 +582,7 @@ Embedded Video Player
 
 .. index::
    single: playerLocation; normal
-   single: playerLocation
+   single: Options (by name); playerLocation
    single: playerLocation; popup
    single: playerLocation; youtube
    single: playerLocation; vimeo
@@ -646,7 +648,7 @@ Embedded Video Player
 .. _option-showInfo:
 
 .. index::
-   single: showInfo
+   single: Options (by name); showInfo
 
 ``showInfo``
 ############
@@ -679,7 +681,7 @@ Video Feed
 .. _option-orderBy:
 
 .. index::
-   single: orderBy
+   single: Options (by name); orderBy
    single: orderBy; commentCount
    single: orderBy; default
    single: orderBy; duration
@@ -752,7 +754,7 @@ Video Feed
 .. _option-perPageSort:
 
 .. index::
-   single: perPageSort
+   single: Options (by name); perPageSort
    single: perPageSort; commentCount
    single: perPageSort; duration
    single: perPageSort; newest
@@ -805,7 +807,7 @@ Video Feed
 .. _option-resultCountCap:
 
 .. index::
-   single: resultCountCap
+   single: Options (by name); resultCountCap
 
 ``resultCountCap``
 ##################
@@ -834,7 +836,7 @@ Video Feed
 .. _option-searchResultsRestrictedToUser:
 
 .. index::
-   single: searchResultsRestrictedToUser
+   single: Options (by name); searchResultsRestrictedToUser
 
 ``searchResultsRestrictedToUser``
 #################################
@@ -861,7 +863,7 @@ Video Feed
 .. _option-videoBlacklist:
 
 .. index::
-   single: videoBlacklist
+   single: Options (by name); videoBlacklist
 
 ``videoBlacklist``
 #################################
@@ -893,7 +895,7 @@ Video Meta Display
 .. _option-author:
 
 .. index::
-   single: author
+   single: Options (by name); author
 
 ``author``
 #################################
@@ -919,7 +921,7 @@ Video Meta Display
 .. _option-category:
 
 .. index::
-   single: category
+   single: Options (by name); category
 
 ``category``
 #################################
@@ -945,7 +947,7 @@ Video Meta Display
 .. _option-dateFormat:
 
 .. index::
-   single: dateFormat
+   single: Options (by name); dateFormat
 
 ``dateFormat``
 #################################
@@ -974,7 +976,7 @@ Video Meta Display
 .. _option-description:
 
 .. index::
-   single: description
+   single: Options (by name); description
 
 ``description``
 #################################
@@ -1000,7 +1002,7 @@ Video Meta Display
 .. _option-descriptionLimit:
 
 .. index::
-   single: descriptionLimit
+   single: Options (by name); descriptionLimit
 
 ``descriptionLimit``
 #################################
@@ -1028,7 +1030,7 @@ Video Meta Display
 .. _option-id:
 
 .. index::
-   single: id
+   single: Options (by name); id
 
 ``id``
 #################################
@@ -1054,7 +1056,7 @@ Video Meta Display
 .. _option-length:
 
 .. index::
-   single: length
+   single: Options (by name); length
 
 ``length``
 #################################
@@ -1080,7 +1082,7 @@ Video Meta Display
 .. _option-relativeDates:
 
 .. index::
-   single: relativeDates
+   single: Options (by name); relativeDates
 
 ``relativeDates``
 #################################
@@ -1107,7 +1109,7 @@ Video Meta Display
 .. _option-tags:
 
 .. index::
-   single: tags
+   single: Options (by name); tags
 
 ``tags``
 #################################
@@ -1133,7 +1135,7 @@ Video Meta Display
 .. _option-title:
 
 .. index::
-   single: title
+   single: Options (by name); title
 
 ``title``
 #################################
@@ -1159,7 +1161,7 @@ Video Meta Display
 .. _option-uploaded:
 
 .. index::
-   single: uploaded
+   single: Options (by name); uploaded
 
 ``uploaded``
 #################################
@@ -1185,7 +1187,7 @@ Video Meta Display
 .. _option-url:
 
 .. index::
-   single: url
+   single: Options (by name); url
 
 ``url``
 #################################
@@ -1211,7 +1213,7 @@ Video Meta Display
 .. _option-views:
 
 .. index::
-   single: views
+   single: Options (by name); views
 
 ``views``
 #################################
@@ -1243,7 +1245,7 @@ Interactive Search
 .. _option-searchProvider:
 
 .. index::
-   single: searchProvider
+   single: Options (by name); searchProvider
 
 ``searchProvider``
 #################################
@@ -1270,7 +1272,7 @@ Interactive Search
 .. _option-searchResultsDomId:
 
 .. index::
-   single: searchResultsDomId
+   single: Options (by name); searchResultsDomId
 
 ``searchResultsDomId``
 #################################
@@ -1300,7 +1302,7 @@ Interactive Search
 .. _option-searchResultsOnly:
 
 .. index::
-   single: searchResultsOnly
+   single: Options (by name); searchResultsOnly
 
 ``searchResultsOnly``
 #################################
@@ -1328,7 +1330,7 @@ Interactive Search
 .. _option-searchResultsUrl:
 
 .. index::
-   single: searchResultsUrl
+   single: Options (by name); searchResultsUrl
 
 ``searchResultsUrl``
 #################################
@@ -1361,7 +1363,7 @@ API Cache
 .. _option-cacheCleaningFactor:
 
 .. index::
-   single: cacheCleaningFactor
+   single: Options (by name); cacheCleaningFactor
 
 ``cacheCleaningFactor``
 #################################
@@ -1389,7 +1391,7 @@ API Cache
 .. _option-cacheDirectory:
 
 .. index::
-   single: cacheDirectory
+   single: Options (by name); cacheDirectory
 
 ``cacheDirectory``
 #################################
@@ -1419,7 +1421,7 @@ API Cache
 .. _option-cacheEnabled:
 
 .. index::
-   single: cacheEnabled
+   single: Options (by name); cacheEnabled
 
 ``cacheEnabled``
 #################################
@@ -1446,7 +1448,7 @@ API Cache
 .. _option-cacheLifetimeSeconds:
 
 .. index::
-   single: cacheLifetimeSeconds
+   single: Options (by name); cacheLifetimeSeconds
 
 ``cacheLifetimeSeconds``
 #################################
@@ -1479,7 +1481,7 @@ Advanced
 .. _option-debugging_enabled:
 
 .. index::
-   single: debugging_enabled
+   single: Options (by name); debugging_enabled
 
 ``debugging_enabled``
 #################################
@@ -1507,7 +1509,7 @@ Advanced
 .. _option-galleryId:
 
 .. index::
-   single: galleryId
+   single: Options (by name); galleryId
 
 ``galleryId``
 #################################
@@ -1538,7 +1540,7 @@ Advanced
 .. _option-httpMethod:
 
 .. index::
-   single: httpMethod
+   single: Options (by name); httpMethod
 
 ``httpMethod``
 #################################
@@ -1566,7 +1568,7 @@ Advanced
 .. _option-https:
 
 .. index::
-   single: https
+   single: Options (by name); https
 
 ``https``
 #################################

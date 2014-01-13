@@ -1,0 +1,2 @@
+Starting with TubePress 3.1.0, TubePress can take advantage of a "boot cache" that can dramatically speed up TubePress.
+In our lab testing, we typically see a **300% - 400% reduction in execution time** with the boot cache enabled.
