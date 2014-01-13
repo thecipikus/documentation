@@ -16,7 +16,7 @@ broken TubePress installation, as TubePress will attempt to make a cross-domain 
 To diagnose if this if your problem, use the following procedure:
 
   1. Using Firefox, navigate to a page with a TubePress gallery
-  2. Open up :ref:`firebug`
+  2. Open up Firebug
   3. Open Firebug's "Console" tab
   4. Click on any TubePress thumbnail. You should see a new XHR request show up as TubePress performs its Ajax request.
 

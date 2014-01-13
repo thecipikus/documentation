@@ -47,7 +47,7 @@ Missing ``tubepress.js``
 Any page that uses TubePress needs to have ``tubepress.js`` loaded somewhere in the document. If this file
 is missing, your gallery's thumbnails won't respond to clicks.
 
-To diagnose if this if your problem, you can view your HTML source or use :ref:`firebug` to verify if this file is being
+To diagnose if this if your problem, you can view your HTML source or use Firebug to verify if this file is being
 loaded correctly. The image below shows what a correct load will look like in Firebug.
 
 .. image:: images/troubleshooting/tubepress-js-load.png
