@@ -43,17 +43,18 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'tubepress'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'sticky_navigation' : True
+    'sticky_navigation' : True,
+    'logo_only' : True
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ["_themes/sphinx_rtd_theme",]
+html_theme_path = ["_themes",]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -64,7 +65,7 @@ html_title = "TubePress Documentation"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = '_static/tubepress_logo.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
