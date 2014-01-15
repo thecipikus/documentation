@@ -76,11 +76,15 @@ TubePress.
 Obtaining API Credentials
 ----------------------------
 
-You will need to supply an additional set of Vimeo API credentials to TubePress. This is a one-time step for this
-add-on.
+You will need to supply an additional set of Vimeo API credentials to TubePress: an "Access Token" with a corresponding
+"Access Token Secret". This is a one-time step for this add-on.
 
 .. warning:: It is extremely important to never publicly divulge these credentials.
 
 ..
 
- 1. Visit https://developer.vimeo.com/apps. You should see a list of any Vimeo apps that you have created. At the very least, you will the app that you created during TubePress installation.
+ 1. Visit https://developer.vimeo.com/apps. You should see a list of any Vimeo apps that you have created. Click on the
+    app that you are using for TubePress.
+ 2. At the bottom of the page, you will see a box containing your Access Token and Access Token Secret:
+
+    .. image:: images/access-token-and-secret.png
