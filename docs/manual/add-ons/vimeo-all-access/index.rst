@@ -29,7 +29,7 @@ Manuals
 TubePress for WordPress
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
- 1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/42-youtube-black-bars-remover/>`_.
+ 1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/49-vimeo-all-access/>`_.
  2. Unzip the file you downloaded (``vimeo-all-access_x_y_z.zip``) into the ``add-ons`` subdirectory of your
     :ref:`TubePress Content Directory <wordpress-tubepress-content-directory>`.
  3. Ensure you have completed the :ref:`one-time Vimeo API setup <wordpress-install-vimeo-api-setup>`.
@@ -43,7 +43,7 @@ TubePress for WordPress
 TubePress for PHP
 ^^^^^^^^^^^^^^^^^^^^^
 
- 1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/42-youtube-black-bars-remover/>`_.
+ 1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/49-vimeo-all-access/>`_.
  2. Unzip the file you downloaded (``vimeo-all-access_x_y_z.zip``) into the ``add-ons`` subdirectory of your
     :ref:`TubePress Content Directory <standalone-tubepress-content-directory>`.
  3. Ensure you have completed the :ref:`one-time Vimeo API setup <standalone-install-vimeo-api-setup>`.
