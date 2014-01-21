@@ -32,7 +32,7 @@
     {% endif %}
   {% endif %}
 
-  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
 
   {% for cssfile in css_files %}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
@@ -145,7 +145,7 @@
 
   {% endif %}
 
-  <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
+    <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
 
   {# STICKY NAVIGATION #}
   {% if theme_sticky_navigation %}
