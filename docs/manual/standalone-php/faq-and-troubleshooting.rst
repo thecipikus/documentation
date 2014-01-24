@@ -20,6 +20,8 @@ Use the table below to find a solution to your problem.
 +--------------------------------------------------------+--------------------------------------------------------------+
 | My videos aren't showing up with TubePress             | :ref:`standalone-troubleshoot-api-latency`                   |
 +--------------------------------------------------------+--------------------------------------------------------------+
+| "No HTTP transports could execute ..." message         | :ref:`standalone-troubleshoot-no-http-transports`            |
++--------------------------------------------------------+--------------------------------------------------------------+
 
 .. _standalone-troubleshoot-javascript-errors:
 
@@ -41,6 +43,13 @@ API Latency
 ###########
 
 .. include:: ../_shared/troubleshooting/api-latency.rst
+
+.. _standalone-troubleshoot-no-http-transports:
+
+Locked-Down PHP Installation
+############################
+
+.. include:: ../_shared/troubleshooting/no-http-transports.rst
 
 .. _standalone-troubleshoot-tools:
 

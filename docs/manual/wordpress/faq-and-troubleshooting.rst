@@ -18,11 +18,13 @@ Use the table below to find a solution to your problem.
 |                                                        | * :ref:`wordpress-troubleshoot-missing-tubepress-js`         |
 |                                                        | * :ref:`wordpress-troubleshoot-multiple-instances-of-jquery` |
 +--------------------------------------------------------+--------------------------------------------------------------+
-| After clicking thumbnail, video never loads            | * :ref:`wordpress-troubleshoot-cross-domain-ajax`            |
+| After clicking thumbnail, video never loads            | :ref:`wordpress-troubleshoot-cross-domain-ajax`              |
 +--------------------------------------------------------+--------------------------------------------------------------+
-| Layout is unstyled or ugly                             | * :ref:`wordpress-troubleshoot-visual-editor`                |
+| Layout is unstyled or ugly                             | :ref:`wordpress-troubleshoot-visual-editor`                  |
 +--------------------------------------------------------+--------------------------------------------------------------+
-| My videos aren't showing up with TubePress             | * :ref:`wordpress-troubleshoot-api-latency`                  |
+| My videos aren't showing up with TubePress             | :ref:`wordpress-troubleshoot-api-latency`                    |
++--------------------------------------------------------+--------------------------------------------------------------+
+| "No HTTP transports could execute ..." message         | :ref:`wordpress-troubleshoot-no-http-transports`             |
 +--------------------------------------------------------+--------------------------------------------------------------+
 
 .. _wordpress-troubleshoot-javascript-errors:
@@ -109,6 +111,13 @@ API Latency
 ###########
 
 .. include:: ../_shared/troubleshooting/api-latency.rst
+
+.. _wordpress-troubleshoot-no-http-transports:
+
+Locked-Down PHP Installation
+############################
+
+.. include:: ../_shared/troubleshooting/no-http-transports.rst
 
 .. _wordpress-troubleshoot-tools:
 
