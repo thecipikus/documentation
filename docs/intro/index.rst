@@ -30,7 +30,7 @@ There are two independent installation paths for TubePress:
  2. One of two **cloud-hosted** TubePress installations:
 
    * `TubePress Express <http://express.tubepress.com/>`_
-   * `TubePress for Wix <http://www.wix.com/about/app-market#!app-market/cbqa/apps/tubepress/overview>`_
+   * :doc:`TubePress for Wix <../manual/wix/index>`
 
 Either installation path provides nearly identical features, but there are a number of drawbacks and
 advantages to each:

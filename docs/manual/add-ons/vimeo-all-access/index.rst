@@ -61,9 +61,9 @@ TubePress for PHP
 .. _vimeo-all-access-manual-wix:
 
 TubePress for Wix
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
-Users of cloud-based TubePress installations (e.g. TubePress Express, TubePress for Wix) should follow these instructions.
+Users of cloud-based TubePress installations (e.g. TubePress Express, :doc:`TubePress for Wix <../../wix/index>`) should follow these instructions.
 
  1. :ref:`Obtain your Vimeo consumer credentials <vimeo-all-access-obtain-consumer-key-secret>`.
  2. :ref:`Obtain your Vimeo access credentials <vimeo-all-access-obtain-token-and-secret>`.
@@ -106,7 +106,7 @@ You will need to supply an additional set of Vimeo API credentials to TubePress:
 Consumer Key (Client ID) and Secret
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: Only cloud-based TubePress users (e.g. TubePress Express, TubePress for Wix, etc) need to follow these instructions,
+.. note:: Only cloud-based TubePress users (e.g. TubePress Express, :doc:`TubePress for Wix <../../wix/index>`, etc) need to follow these instructions,
           as users of downloadable distributions of TubePress should have completed this step during installation.
 
 ..
