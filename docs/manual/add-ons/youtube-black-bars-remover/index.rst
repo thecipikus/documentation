@@ -24,7 +24,7 @@ Manuals
 .. _youtube-bbr-manual-wordpress:
 
 TubePress for WordPress
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
  1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/42-youtube-black-bars-remover/>`_.
  2. Unzip the file you downloaded (``youtube-black-bars-remover_x_y_z.zip``) into the ``add-ons`` subdirectory of your

@@ -1,7 +1,7 @@
 .. _standalone-basic-usage:
 
 Using TubePress in PHP
-============================
+======================
 
 .. contents:: On This Page
    :local:

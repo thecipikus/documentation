@@ -1,5 +1,5 @@
 Vimeo All Access
-==========================
+================
 
 .. contents:: On This Page
    :local:
@@ -27,7 +27,7 @@ Manuals
 .. _vimeo-all-access-manual-wordpress:
 
 TubePress for WordPress
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
  1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/49-vimeo-all-access/>`_.
  2. Unzip the file you downloaded (``vimeo-all-access_x_y_z.zip``) into the ``add-ons`` subdirectory of your
@@ -67,9 +67,7 @@ Users of cloud-based TubePress installations (e.g. TubePress Express, :doc:`Tube
 
  1. :ref:`Obtain your Vimeo consumer credentials <vimeo-all-access-obtain-consumer-key-secret>`.
  2. :ref:`Obtain your Vimeo access credentials <vimeo-all-access-obtain-token-and-secret>`.
- 3. Open up the full settings page for your TubePress instance by clicking the "More Settings" button:
-
-   .. image:: ../../wix/images/wix-more-settings-button.png
+ 3. Open up the :ref:`full settings page <wix-configuring-full>` for your TubePress instance.
  4. In the window that opens, navigate to the "Feed" tab and scroll down to the "Vimeo All Access" box:
 
    .. image:: images/wix-full-settings.png
@@ -81,12 +79,12 @@ Users of cloud-based TubePress installations (e.g. TubePress Express, :doc:`Tube
 .. _vimeo-all-access-obtain-credentials:
 
 Obtaining API Credentials
-----------------------------
+-------------------------
 
 .. _vimeo-all-access-obtain-token-and-secret:
 
 Access Token and Secret
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 You will need to supply an additional set of Vimeo API credentials to TubePress: an "Access Token" with a corresponding
 "Access Token Secret". This is a one-time step for this add-on.

@@ -9,6 +9,8 @@ Wix website up and running; if not, Wix offers `excellent documentation to get y
 .. contents:: On This Page
    :local:
 
+.. _wix-add-app:
+
 Adding the TubePress App
 ------------------------
 
@@ -37,6 +39,8 @@ For the sake of completeness, here's how to add TubePress to your site.
 
 You can repeat steps 1 - 4 as many times as you like!
 
+.. _wix-configuring-simple:
+
 Configuring - Simple
 --------------------
 
@@ -51,6 +55,8 @@ Configuring TubePress in Wix is extremely simple.
     change some of the options. Your changes will be reflected "live" so that you can see the result immediately.
 
     .. image:: images/config-simple.png
+
+.. _wix-configuring-full:
 
 Configuring - Full Settings
 ---------------------------
