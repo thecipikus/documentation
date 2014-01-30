@@ -23,9 +23,9 @@ Manuals
 TubePress for WordPress
 ^^^^^^^^^^^^^^^^^^^^^^^
 
- 1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/49-vimeo-all-access/>`_.
+ 1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/57-quickplay/>`_.
  2. Unzip the file you downloaded (``quickplay_x_y_z.zip``) into the ``add-ons`` subdirectory of your :ref:`TubePress Content Directory <wordpress-tubepress-content-directory>`.
- 3. Copy (or symlink) the directory at ``wp-content/tubepress-content/add-ons/quickplay_x.y.z/tubepress-theme`` **to** ``wp-content/tubepress-content/themes/quickplay``
+ 3. Copy (or symlink) the directory at ``wp-content/tubepress-content/add-ons/quickplay_x_y_z/tubepress-theme`` **to** ``wp-content/tubepress-content/themes/quickplay``
  4. Anytime you :ref:`add TubePress to a post or page <wordpress-posts-pages-usage>`, set the options ``enableQuickplay='true'`` and ``theme='quickplay'``. e.g.
 
     .. code-block:: php
@@ -37,10 +37,10 @@ TubePress for WordPress
 TubePress for PHP
 ^^^^^^^^^^^^^^^^^
 
- 1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/49-vimeo-all-access/>`_.
+ 1. Purchase and download this add-on from `the TubePress Marketplace <http://community.tubepress.com/files/file/57-quickplay/>`_.
  2. Unzip the file you downloaded (``quickplay_x_y_z.zip``) into the ``add-ons`` subdirectory of your
     :ref:`TubePress Content Directory <standalone-tubepress-content-directory>`.
- 3. Copy (or symlink) the directory at ``tubepress-content/add-ons/quickplay_x.y.z/tubepress-theme`` **to** ``tubepress-content/themes/quickplay``
+ 3. Copy (or symlink) the directory at ``tubepress-content/add-ons/quickplay_x_y_z/tubepress-theme`` **to** ``tubepress-content/themes/quickplay``
  4. Anytime you :ref:`add TubePress to a page <basic-standalone-configuration>`, set the options ``enableQuickplay='true'`` and ``theme='quickplay'``. e.g.
 
     .. code-block:: php
