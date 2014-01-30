@@ -1,5 +1,4 @@
-.. note:: The rest of this section details the contents of ``config/boot.json`` for advanced users. Most users can skip
-this section.
+.. note:: The rest of this section details the contents of ``config/boot.json`` for advanced users. Most users can skip this section.
 
 Let's examine each piece of the file...
 
@@ -55,5 +54,5 @@ using a particular add-on, adding it to the blacklist will improve TubePress's p
        "enabled" : true
    }
 
-By default, TubePress uses its own high-performance PSR-0 compliant classloader. If you would like to use a
-classloader defined elsewhere, you can set this value to ``false``.
+By default, TubePress uses its own high-performance `PSR-0 <https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md>`_ compliant
+class loader. If you would like to use a class loader defined elsewhere, you can set this value to ``false``.

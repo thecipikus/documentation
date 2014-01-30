@@ -1,8 +1,8 @@
 Enabling the cache is easy; you'll just need a text editor. Here's how to do it...
 
- 1. Ensure that TubePress debugging is enabled.
+ 1. Ensure that TubePress debugging is enabled so that you can verify that the cache is working.
 
-    In standalone PHP environments, this is enabled by default. In WordPress environments, ensure the box at WP Admin > Settings > TubePress > Advanced > Enable Debugging is ticked. This will allow you to verify that the cache is working.
+    In standalone PHP environments, this is enabled by default. In WordPress environments, ensure the box at ``WP Admin > Settings > TubePress > Advanced > Enable Debugging`` is ticked.
 
  2. TubePress's boot process is controlled by a single file located within your TubePress content directory at
     ``config/boot.json``. In TubePress 3.1.0+, this file and the config directory are included by default. In older
@@ -85,7 +85,6 @@ Enabling the cache is easy; you'll just need a text editor. Here's how to do it.
            Default Option Descriptor Reference: Successfully hydrated from cache file at ... /serialized-option-descriptors.txt
            ...
            TubePress Bootstrapper: Boot completed in 28.892893 milliseconds
-        ..
 
-           If your debug output is missing any of the highlighted phrases, it means that something is misconfigured.
-           Feel free to post a question in `the forum <https://community.tubepress.com/>`_ to get help.
+    If your debug output is missing any of the highlighted phrases, it means that something is misconfigured.
+    Feel free to post a question in `the forum <https://community.tubepress.com/>`_ to get help.
