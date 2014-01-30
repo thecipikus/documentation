@@ -7,3 +7,4 @@ Official TubePress Add-Ons
    youtube-black-bars-remover/index
    vimeo-all-access/index
    flexible-thumbnail-rows/index
+   quickplay/index
