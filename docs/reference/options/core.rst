@@ -135,35 +135,6 @@ Thumbnails
 | Standalone PHP example | ``TubePressPro::getHtmlForShortcode('ajaxPagination="true"');``                            |
 +------------------------+--------------------------------------------------------------------------------------------+
 
-.. _option-flexibleThumbnailRows:
-
-.. index::
-   single: options (by name); flexibleThumbnailRows
-   single: thumbnails; flexible row height
-
-``flexibleThumbnailRows``
-#########################
-
-+------------------------+--------------------------------------------------------------------------------------------+
-| **Option name**        | ``flexibleThumbnailRows``                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Description            | Automatically adjust the height of thumbnail rows in TubePress |br|                        |
-|                        | galleries, ensuring that the metadata (runtime, title, description, |br|                   |
-|                        | etc) for each video is completely visible                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Provided with          | :doc:`../../manual/add-ons/flexible-thumbnail-rows/index`                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Default value          | ``false``                                                                                  |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Valid values           | ``true`` or ``false``                                                                      |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Supported provider(s)  | Vimeo and YouTube                                                                          |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Shortcode example      | ``[tubepress flexibleThumbnailRows="true"]``                                               |
-+------------------------+--------------------------------------------------------------------------------------------+
-| Standalone PHP example | ``TubePressPro::getHtmlForShortcode('flexibleThumbnailRows="true"');``                     |
-+------------------------+--------------------------------------------------------------------------------------------+
-
 .. _option-fluidThumbs:
 
 .. index::
